@@ -477,7 +477,8 @@
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": [
-      "FS_3_Global_Symbol_Library"
+      "FS_3_Global_Symbol_Library",
+      "discharger"
     ]
   },
   "meta": {
@@ -826,7 +827,7 @@
         "uuid": "553a23ec-442a-4f98-939d-2d5634a662f5"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U1",
     "variants": []
   },
   "sheets": [
@@ -840,11 +841,11 @@
     ],
     [
       "7756f6ce-96a2-41f3-8f50-742d0a0e9d47",
-      "Temperature Sensors"
+      "Temperature Sensor Interface"
     ],
     [
       "98594cde-9185-4890-9c69-9d9c5b8afa45",
-      "Voltage and Current Sense"
+      "Voltage Sense Amplifier"
     ]
   ],
   "text_variables": {},

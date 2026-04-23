@@ -16,8 +16,8 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 152.4 50.8)
-		(size 40.64 99.06)
+		(at 149.86 50.8)
+		(size 40.64 203.2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -32,7 +32,7 @@
 		)
 		(uuid "0b6d399e-4874-4b8e-ba43-f1ecb438e1d8")
 		(property "Sheetname" "Microcontroller"
-			(at 152.4 50.0884 0)
+			(at 149.86 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43,7 +43,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 152.4 150.4446 0)
+			(at 149.86 254.5846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -51,6 +51,146 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "~{RB_GATE_RST}" output
+			(at 149.86 165.1 180)
+			(uuid "0eca78e5-df0a-4a56-a2ea-e48dca019deb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{RB_GATE_FAULT}" input
+			(at 149.86 170.18 180)
+			(uuid "e17ca393-4817-448a-a5d0-95a160f1fecb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RB_GATE_READY" input
+			(at 149.86 172.72 180)
+			(uuid "27bdf430-75e6-4574-b299-412468bfac26")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{RB_GATE_RESET_STATUS}" input
+			(at 149.86 167.64 180)
+			(uuid "bfdc34c8-e571-46ca-bffd-b125660a3a7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RB_GATE_PWM" output
+			(at 149.86 162.56 180)
+			(uuid "ce634926-ac1e-470f-a17b-ffcdb923fd84")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RP_GATE_PWM" output
+			(at 149.86 177.8 180)
+			(uuid "1a232a4b-3b2c-45ba-b4fd-939bf2dc349d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RP_GATE_READY" input
+			(at 149.86 182.88 180)
+			(uuid "02d83415-515a-4bca-b4f6-7b5b9a1135d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{RP_GATE_RESET}" output
+			(at 149.86 180.34 180)
+			(uuid "324a6275-b1fd-449d-afb6-c0f280144c98")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{RP_GATE_FAULT}" input
+			(at 149.86 185.42 180)
+			(uuid "15341592-46e2-4bb7-982e-ebb572504941")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BUS_CURRENT" input
+			(at 149.86 205.74 180)
+			(uuid "3e68df1c-8080-4f73-bab7-7d5ec72dfa33")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BUS_VOLTAGE_PWM" input
+			(at 149.86 208.28 180)
+			(uuid "7a13b7ed-1ac9-4d2f-985c-5fd0cca9c86c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_RX" input
+			(at 149.86 219.71 180)
+			(uuid "5f1d2ab4-c60f-4e14-84c4-ed82357e9834")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_TX" output
+			(at 149.86 217.17 180)
+			(uuid "c8ee992f-d920-4c5b-a793-35e6f077a457")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "P_CURRENT_PWM" input
+			(at 149.86 189.23 180)
+			(uuid "9e881e2c-d99a-49be-93f3-4ccae22b70a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -62,8 +202,8 @@
 		)
 	)
 	(sheet
-		(at 60.96 50.8)
-		(size 38.1 53.34)
+		(at 100.965 50.8)
+		(size 26.035 57.15)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -77,8 +217,8 @@
 			(color 0 0 0 0)
 		)
 		(uuid "7756f6ce-96a2-41f3-8f50-742d0a0e9d47")
-		(property "Sheetname" "Temperature Sensors"
-			(at 60.96 50.0884 0)
+		(property "Sheetname" "Temperature Sensor Interface"
+			(at 100.965 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -89,7 +229,7 @@
 			)
 		)
 		(property "Sheetfile" "temp_sense.kicad_sch"
-			(at 60.96 104.7246 0)
+			(at 100.965 108.5346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -108,8 +248,8 @@
 		)
 	)
 	(sheet
-		(at 60.96 114.3)
-		(size 38.1 27.94)
+		(at 101.6 118.11)
+		(size 25.4 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -123,8 +263,8 @@
 			(color 0 0 0 0)
 		)
 		(uuid "98594cde-9185-4890-9c69-9d9c5b8afa45")
-		(property "Sheetname" "Voltage and Current Sense"
-			(at 60.96 113.5884 0)
+		(property "Sheetname" "Voltage Sense Amplifier"
+			(at 101.6 117.3984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -135,7 +275,7 @@
 			)
 		)
 		(property "Sheetfile" "voltage_current_sense.kicad_sch"
-			(at 60.96 142.8246 0)
+			(at 101.6 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
