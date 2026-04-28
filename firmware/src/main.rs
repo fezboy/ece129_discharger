@@ -1,10 +1,12 @@
 #![no_std]
 #![no_main]
 
-use defmt::{panic, *};
+
+use defmt::{panic, assert, *};
 use embassy_executor::Spawner;
 use embassy_futures::join::join3;
-use embassy_stm32::i2c::{Error, I2c};
+use embassy_stm32::i2c::{I2c};
+use embassy_stm32::pac::Interrupt::USART1;
 use embassy_stm32::{bind_interrupts, dma, i2c, peripherals};
 use embassy_stm32::{Config, usb, gpio::{Level, Output, Speed}};
 use embassy_time::Timer;
@@ -17,6 +19,8 @@ use embassy_usb::driver::EndpointError;
 use {defmt_rtt as _, panic_probe as _};
 use ssd1306::{prelude::*, I2CDisplayInterface, Ssd1306Async};
 
+use heapless::{format, String, string::StringView};
+
 
 bind_interrupts!(struct Irqs {
     I2C1_EV => i2c::EventInterruptHandler<peripherals::I2C1>;
@@ -26,25 +30,61 @@ bind_interrupts!(struct Irqs {
     USB_DRD_FS => usb::InterruptHandler<peripherals::USB>;
 });
 
+const USB_MAX_PACKET_SIZE: usize = 64;
+
+type UsbDriver<'a> = embassy_stm32::usb::Driver<'a, embassy_stm32::peripherals::USB>;
+type Builder<'a> = embassy_usb::Builder<'a, UsbDriver<'a>>;
+
+fn init_usb(p: embassy_stm32::Peripherals) -> (CdcAcmClass<'static, UsbDriver<'static>>, embassy_usb::UsbDevice<'static, UsbDriver<'static>>) {
+    // Create USB Driver
+    let driver = Driver::new(p.USB, Irqs, p.PA12, p.PA11);
+    let mut config = embassy_usb::Config::new(0xc0de, 0xcafe);
+    config.manufacturer = Some("Formula Slug");
+    config.product = Some("Discharger");
+    config.serial_number = Some("12345678");
+
+    static mut config_descriptor = [0; 256];
+    static mut bos_descriptor = [0; 256];
+    static mut control_buf = [0; 64];
+
+    let mut state = cdc_acm::State::new();
+
+    let mut builder = embassy_usb::Builder::new(
+        driver,
+        config,
+        &mut config_descriptor,
+        &mut bos_descriptor,
+        &mut [], // No Msos descriptors
+        &mut control_buf,
+    );
+
+
+    let mut usb_class = CdcAcmClass::new(&mut builder, &mut state, USB_MAX_PACKET_SIZE as u16);
+    let mut usb = builder.build();
+    return (usb_class, usb);
+}
+
 #[embassy_executor::main]
 async fn main(_spawner: Spawner) {
     info!("Hello World!");
+
+    // Configure Clocks
     let mut config = Config::default();
     {
         use embassy_stm32::rcc::*;
         config.rcc.hsi = None;
         config.rcc.hsi48 = Some(Hsi48Config {sync_from_usb: true}); // Needed for USB
         config.rcc.hse = Some(Hse {
-            freq: Hertz(8_000_000),
-            mode: HseMode::BypassDigital,
+            freq: Hertz(24_000_000),
+            mode: HseMode::Oscillator,
         });
 
         config.rcc.pll1 = Some(Pll {
             source: PllSource::HSE,
-            prediv: PllPreDiv::DIV2,
-            mul: PllMul::MUL125,
+            prediv: PllPreDiv::DIV3,
+            mul: PllMul::MUL62,
             divp: Some(PllDiv::DIV2), // 250mHz
-            divq: None,
+            divq: Some(PllDiv::DIV2),
             divr: None,
         });
 
@@ -56,39 +96,17 @@ async fn main(_spawner: Spawner) {
         config.rcc.voltage_scale = VoltageScale::Scale0;
         config.rcc.mux.usbsel = mux::Usbsel::HSI48;
     }
-    info!("Hello 1!");
     let p = embassy_stm32::init(config);
-    info!("Hello 2");
 
-    // Create USB Driver
-    let driver = Driver::new(p.USB, Irqs, p.PA12, p.PA11);
-    let mut config = embassy_usb::Config::new(0xc0de, 0xcafe);
-    config.manufacturer = Some("Formula Slug");
-    config.product = Some("Discharger");
-    config.serial_number = Some("12345678");
 
-    let mut config_descriptor = [0; 256];
-    let mut bos_descriptor = [0; 256];
-    let mut control_buf = [0, 64];
-
-    let mut state = cdc_acm::State::new();
-    let mut builder = embassy_usb::Builder::new(
-        driver,
-        config,
-        &mut config_descriptor,
-        &mut bos_descriptor,
-        &mut [],
-        &mut control_buf,
-    );
-
-    let mut class = CdcAcmClass::new(&mut builder, &mut state, 64);
+    let mut (usb_class, usb) = init_usb();
 
     let mut usb = builder.build();
     let usb_fut = usb.run();
 
     let mut led = Output::new(p.PA5, Level::High, Speed::Low);
 
-    let mut i2c = I2c::new(
+    let i2c = I2c::new(
         p.I2C1,
         p.PB6,
         p.PB7,
@@ -106,24 +124,23 @@ async fn main(_spawner: Spawner) {
 
     let _ = display.write_str("Hello Rust!").await;
 
-    let mut data = [0u8; 1];
 
     let blinky_fut = async {
            loop {
-        info!("high");
+        // info!("high");
         led.set_high();
         Timer::after_millis(500).await;
 
-        info!("low");
+        // info!("low");
         led.set_low();
         Timer::after_millis(500).await;
     }};
 
     let echo_fut = async {
         loop {
-            class.wait_connection().await;
+            usb_class.wait_connection().await;
             info!("Connected!");
-            let _ = echo(&mut class).await;
+            let _ = echo(&mut usb_class).await;
             info!("Disconnected :(");
         }
     };
@@ -144,12 +161,38 @@ impl From<EndpointError> for Disconnected {
     }
 }
 
+async fn write_packet<'d, T: Instance + 'd>(accumulator: &mut StringView, class: &mut CdcAcmClass<'d, Driver<'d, T>>) -> Result<(), Disconnected> {
+    class.write_packet(accumulator.as_bytes()).await?;
+    accumulator.clear();
+    Ok(())
+}
+
+async fn push_str_or_write<'d, T: Instance + 'd>(accumulator: &mut StringView, s: &[u8], class: &mut CdcAcmClass<'d, Driver<'d, T>>) -> Result<(), Disconnected> {
+    assert!(accumulator.capacity() > s.len());
+    if accumulator.capacity() - accumulator.len() < s.len() {
+        debug!("Writing packet with length {}", accumulator.len());
+        write_packet(accumulator, class).await?;
+    }
+    accumulator.push_str(unsafe {str::from_utf8_unchecked(s)}).expect("Received string somehow bigger than accumulator");
+    Ok(())
+}
+
 async fn echo<'d, T: Instance + 'd>(class: &mut CdcAcmClass<'d, Driver<'d, T>>) -> Result<(), Disconnected> {
-    let mut buf = [0; 64];
+    let mut buf = [0; USB_MAX_PACKET_SIZE];
+    let mut accumulator = String::<USB_MAX_PACKET_SIZE>::new();
+
     loop {
         let n = class.read_packet(&mut buf).await?;
-        let data = &buf[..n];
-        info!("Data: {:x}", data);
-        class.write_packet(data).await?
+        let mut data = &buf[..n];
+
+        // If there are newlines, print the data!
+        while let Some(pos) = data.iter().position(|&c| c == b'\n') {
+            push_str_or_write(&mut accumulator, &data[..pos + 1], class).await?;
+            write_packet(&mut accumulator, class).await?;
+            data = &data[pos + 1..];
+        }
+
+        push_str_or_write(&mut accumulator, &data, class).await?;
+        info!("Data: {:x}, len {}, total accumulated: {}", data, data.len(), accumulator.len());
     }
 }
