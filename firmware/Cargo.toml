@@ -6,7 +6,7 @@ edition = "2024"
 [dependencies]
 embassy-stm32 = { version = "0.6.0", features = [
     "defmt",
-    "time-driver-any",
+    "time-driver-tim2",
     "stm32h503rb",
     "memory-x",
     "unstable-pac",

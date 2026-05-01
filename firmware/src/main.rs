@@ -6,13 +6,14 @@ use defmt::{panic, assert, *};
 use embassy_executor::Spawner;
 use embassy_futures::join::join3;
 use embassy_stm32::i2c::{I2c};
-use embassy_stm32::pac::Interrupt::USART1;
-use embassy_stm32::{bind_interrupts, dma, i2c, peripherals};
+use embassy_stm32::{bind_interrupts, dma, i2c, peripherals, Peri};
+use embassy_stm32::peripherals::USB;
 use embassy_stm32::{Config, usb, gpio::{Level, Output, Speed}};
+use embassy_stm32::timer::{qei, qei::{Qei}};
 use embassy_time::Timer;
 use embassy_stm32::time::Hertz;
 
-use embassy_stm32::usb::{Driver, Instance};
+use embassy_stm32::usb::{DmPin, DpPin, Driver, Instance};
 use embassy_usb::class::cdc_acm::{self, CdcAcmClass};
 use embassy_usb::driver::EndpointError;
 
@@ -32,35 +33,40 @@ bind_interrupts!(struct Irqs {
 
 const USB_MAX_PACKET_SIZE: usize = 64;
 
-type UsbDriver<'a> = embassy_stm32::usb::Driver<'a, embassy_stm32::peripherals::USB>;
+type UsbDriver<'a> = embassy_stm32::usb::Driver<'a, USB>;
 type Builder<'a> = embassy_usb::Builder<'a, UsbDriver<'a>>;
 
-fn init_usb(p: embassy_stm32::Peripherals) -> (CdcAcmClass<'static, UsbDriver<'static>>, embassy_usb::UsbDevice<'static, UsbDriver<'static>>) {
+
+fn init_usb(p_usb: Peri<'static, USB>,
+    p_dp: Peri<'static, impl DpPin<USB>>,
+    p_dm: Peri<'static, impl DmPin<USB>>) -> (
+        CdcAcmClass<'static, UsbDriver<'static>>,
+        embassy_usb::UsbDevice<'static, UsbDriver<'static>>) {
     // Create USB Driver
-    let driver = Driver::new(p.USB, Irqs, p.PA12, p.PA11);
+    let driver = Driver::new(p_usb, Irqs, p_dp, p_dm);
     let mut config = embassy_usb::Config::new(0xc0de, 0xcafe);
     config.manufacturer = Some("Formula Slug");
     config.product = Some("Discharger");
     config.serial_number = Some("12345678");
 
-    static mut config_descriptor = [0; 256];
-    static mut bos_descriptor = [0; 256];
-    static mut control_buf = [0; 64];
+    static mut CONFIG_DESCRIPTOR: [u8; 256] = [0; 256];
+    static mut BOS_DESCRIPTOR: [u8; 256] = [0; 256];
+    static mut CONTROL_BUF: [u8; 64] = [0; 64];
 
-    let mut state = cdc_acm::State::new();
+    static mut USB_STATE: cdc_acm::State = cdc_acm::State::new();
 
     let mut builder = embassy_usb::Builder::new(
         driver,
         config,
-        &mut config_descriptor,
-        &mut bos_descriptor,
+        &mut CONFIG_DESCRIPTOR},
+        unsafe {&mut BOS_DESCRIPTOR},
         &mut [], // No Msos descriptors
-        &mut control_buf,
+        unsafe {&mut CONTROL_BUF},
     );
 
 
-    let mut usb_class = CdcAcmClass::new(&mut builder, &mut state, USB_MAX_PACKET_SIZE as u16);
-    let mut usb = builder.build();
+    let usb_class = CdcAcmClass::new(&mut builder, unsafe {&mut USB_STATE}, USB_MAX_PACKET_SIZE as u16);
+    let usb = builder.build();
     return (usb_class, usb);
 }
 
@@ -99,9 +105,8 @@ async fn main(_spawner: Spawner) {
     let p = embassy_stm32::init(config);
 
 
-    let mut (usb_class, usb) = init_usb();
+    let (mut usb_class, mut usb) = init_usb(p.USB, p.PA12, p.PA11);
 
-    let mut usb = builder.build();
     let usb_fut = usb.run();
 
     let mut led = Output::new(p.PA5, Level::High, Speed::Low);
@@ -121,6 +126,11 @@ async fn main(_spawner: Spawner) {
 
     display.init().await.unwrap();
     let _ = display.clear().await;
+
+
+    // Set up QEI Driver
+    let qei_config = qei::Config::default();
+    let qei = Qei::new(p.TIM3, p.PC6, p.PA7, qei_config);
 
     let _ = display.write_str("Hello Rust!").await;
 
