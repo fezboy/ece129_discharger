@@ -1,74 +1,27 @@
 #![no_std]
 #![no_main]
 
-
-use defmt::{panic, assert, *};
+use defmt::{assert, panic, *};
 use embassy_executor::Spawner;
-use embassy_futures::join::join3;
-use embassy_stm32::i2c::{I2c};
-use embassy_stm32::{bind_interrupts, dma, i2c, peripherals, Peri};
-use embassy_stm32::peripherals::USB;
-use embassy_stm32::{Config, usb, gpio::{Level, Output, Speed}};
-use embassy_stm32::timer::{qei, qei::{Qei}};
-use embassy_time::Timer;
+use embassy_futures::join::join4;
+use embassy_stm32::{Config, timer::qei};
 use embassy_stm32::time::Hertz;
+use embassy_stm32::timer::qei::Direction;
+use embassy_time::Timer;
 
-use embassy_stm32::usb::{DmPin, DpPin, Driver, Instance};
-use embassy_usb::class::cdc_acm::{self, CdcAcmClass};
+use embassy_stm32::usb::{Driver, Instance};
+use embassy_usb::class::cdc_acm::CdcAcmClass;
 use embassy_usb::driver::EndpointError;
 
+use ssd1306::prelude::*;
 use {defmt_rtt as _, panic_probe as _};
-use ssd1306::{prelude::*, I2CDisplayInterface, Ssd1306Async};
 
-use heapless::{format, String, string::StringView};
+use heapless::{String, string::StringView};
 
-
-bind_interrupts!(struct Irqs {
-    I2C1_EV => i2c::EventInterruptHandler<peripherals::I2C1>;
-    I2C1_ER => i2c::ErrorInterruptHandler<peripherals::I2C1>;
-    GPDMA1_CHANNEL4 => dma::InterruptHandler<peripherals::GPDMA1_CH4>;
-    GPDMA1_CHANNEL5 => dma::InterruptHandler<peripherals::GPDMA1_CH5>;
-    USB_DRD_FS => usb::InterruptHandler<peripherals::USB>;
-});
-
-const USB_MAX_PACKET_SIZE: usize = 64;
-
-type UsbDriver<'a> = embassy_stm32::usb::Driver<'a, USB>;
-type Builder<'a> = embassy_usb::Builder<'a, UsbDriver<'a>>;
+use board::{USB_MAX_PACKET_SIZE, SCREEN_WIDTH};
 
 
-fn init_usb(p_usb: Peri<'static, USB>,
-    p_dp: Peri<'static, impl DpPin<USB>>,
-    p_dm: Peri<'static, impl DmPin<USB>>) -> (
-        CdcAcmClass<'static, UsbDriver<'static>>,
-        embassy_usb::UsbDevice<'static, UsbDriver<'static>>) {
-    // Create USB Driver
-    let driver = Driver::new(p_usb, Irqs, p_dp, p_dm);
-    let mut config = embassy_usb::Config::new(0xc0de, 0xcafe);
-    config.manufacturer = Some("Formula Slug");
-    config.product = Some("Discharger");
-    config.serial_number = Some("12345678");
-
-    static mut CONFIG_DESCRIPTOR: [u8; 256] = [0; 256];
-    static mut BOS_DESCRIPTOR: [u8; 256] = [0; 256];
-    static mut CONTROL_BUF: [u8; 64] = [0; 64];
-
-    static mut USB_STATE: cdc_acm::State = cdc_acm::State::new();
-
-    let mut builder = embassy_usb::Builder::new(
-        driver,
-        config,
-        &mut CONFIG_DESCRIPTOR},
-        unsafe {&mut BOS_DESCRIPTOR},
-        &mut [], // No Msos descriptors
-        unsafe {&mut CONTROL_BUF},
-    );
-
-
-    let usb_class = CdcAcmClass::new(&mut builder, unsafe {&mut USB_STATE}, USB_MAX_PACKET_SIZE as u16);
-    let usb = builder.build();
-    return (usb_class, usb);
-}
+mod board;
 
 #[embassy_executor::main]
 async fn main(_spawner: Spawner) {
@@ -79,7 +32,9 @@ async fn main(_spawner: Spawner) {
     {
         use embassy_stm32::rcc::*;
         config.rcc.hsi = None;
-        config.rcc.hsi48 = Some(Hsi48Config {sync_from_usb: true}); // Needed for USB
+        config.rcc.hsi48 = Some(Hsi48Config {
+            sync_from_usb: true,
+        }); // Needed for USB
         config.rcc.hse = Some(Hse {
             freq: Hertz(24_000_000),
             mode: HseMode::Oscillator,
@@ -104,60 +59,79 @@ async fn main(_spawner: Spawner) {
     }
     let p = embassy_stm32::init(config);
 
+    let mut board = board::Board::init(p);
+    let usb_fut = board.usb.run();
 
-    let (mut usb_class, mut usb) = init_usb(p.USB, p.PA12, p.PA11);
+    board.display.init().await.unwrap();
+    let _ = board.display.clear().await;
 
-    let usb_fut = usb.run();
-
-    let mut led = Output::new(p.PA5, Level::High, Speed::Low);
-
-    let i2c = I2c::new(
-        p.I2C1,
-        p.PB6,
-        p.PB7,
-        p.GPDMA1_CH4,
-        p.GPDMA1_CH5,
-        Irqs,
-        Default::default(),
-    );
-
-    let interface = I2CDisplayInterface::new(i2c);
-    let mut display = Ssd1306Async::new(interface, DisplaySize128x32, DisplayRotation::Rotate0).into_terminal_mode();
-
-    display.init().await.unwrap();
-    let _ = display.clear().await;
+    let _ = board.display.write_str("Hello Rust!").await;
 
 
-    // Set up QEI Driver
-    let qei_config = qei::Config::default();
-    let qei = Qei::new(p.TIM3, p.PC6, p.PA7, qei_config);
+    let mut screen_buf: String<SCREEN_WIDTH> = String::new();
+    let mut direction: qei::Direction = qei::Direction::Downcounting;
+    let mut count: u16 = 0;
+    let screen_fut = async {
+        loop {
+            direction = board.qei.read_direction();
+            let lastcount = count;
+            count = board.qei.count();
+            if count == lastcount {continue;}
 
-    let _ = display.write_str("Hello Rust!").await;
+            debug!("Moved {}. Current position: {}",
+                  match direction {
+                      Direction::Downcounting => "down",
+                      Direction::Upcounting => "up",
+                  },
+                  count
+            );
 
+
+            screen_buf.clear();
+            for _ in 0..count {
+                screen_buf
+                    .push('#')
+                    .expect("Overflowed screen width [Impossible?]");
+            };
+
+            for _ in count..SCREEN_WIDTH as u16 {
+                screen_buf.push(' ').expect("Overflowed screen width [Impossible?]");
+            }
+
+            board.display.set_position(0, 0).await
+                .unwrap_or_else(|e| {error!("Couldn't set position! {}", e)});
+
+            board.display.write_str(screen_buf.as_str()).await
+                .unwrap_or_else(|e| error!("Couldn't write to display! {}", e));
+
+            Timer::after_millis(16).await;
+        }
+    };
 
     let blinky_fut = async {
-           loop {
-        // info!("high");
-        led.set_high();
-        Timer::after_millis(500).await;
+        loop {
+            // info!("high");
+            board.blink_led.set_high();
+            Timer::after_millis(500).await;
 
-        // info!("low");
-        led.set_low();
-        Timer::after_millis(500).await;
-    }};
+            // info!("low");
+            board.blink_led.set_low();
+            Timer::after_millis(500).await;
+        }
+    };
 
     let echo_fut = async {
         loop {
-            usb_class.wait_connection().await;
+            board.usb_class.wait_connection().await;
             info!("Connected!");
-            let _ = echo(&mut usb_class).await;
+            let _ = echo(&mut board.usb_class).await;
             info!("Disconnected :(");
         }
     };
 
     info!("Hello world!");
 
-    join3(usb_fut, echo_fut, blinky_fut).await;
+    join4(usb_fut, echo_fut, blinky_fut, screen_fut).await;
 }
 
 struct Disconnected {}
@@ -171,23 +145,34 @@ impl From<EndpointError> for Disconnected {
     }
 }
 
-async fn write_packet<'d, T: Instance + 'd>(accumulator: &mut StringView, class: &mut CdcAcmClass<'d, Driver<'d, T>>) -> Result<(), Disconnected> {
+async fn write_packet<'d, T: Instance + 'd>(
+    accumulator: &mut StringView,
+    class: &mut CdcAcmClass<'d, Driver<'d, T>>,
+) -> Result<(), Disconnected> {
     class.write_packet(accumulator.as_bytes()).await?;
     accumulator.clear();
     Ok(())
 }
 
-async fn push_str_or_write<'d, T: Instance + 'd>(accumulator: &mut StringView, s: &[u8], class: &mut CdcAcmClass<'d, Driver<'d, T>>) -> Result<(), Disconnected> {
+async fn push_str_or_write<'d, T: Instance + 'd>(
+    accumulator: &mut StringView,
+    s: &[u8],
+    class: &mut CdcAcmClass<'d, Driver<'d, T>>,
+) -> Result<(), Disconnected> {
     assert!(accumulator.capacity() > s.len());
     if accumulator.capacity() - accumulator.len() < s.len() {
         debug!("Writing packet with length {}", accumulator.len());
         write_packet(accumulator, class).await?;
     }
-    accumulator.push_str(unsafe {str::from_utf8_unchecked(s)}).expect("Received string somehow bigger than accumulator");
+    accumulator
+        .push_str(unsafe { str::from_utf8_unchecked(s) })
+        .expect("Received string somehow bigger than accumulator");
     Ok(())
 }
 
-async fn echo<'d, T: Instance + 'd>(class: &mut CdcAcmClass<'d, Driver<'d, T>>) -> Result<(), Disconnected> {
+async fn echo<'d, T: Instance + 'd>(
+    class: &mut CdcAcmClass<'d, Driver<'d, T>>,
+) -> Result<(), Disconnected> {
     let mut buf = [0; USB_MAX_PACKET_SIZE];
     let mut accumulator = String::<USB_MAX_PACKET_SIZE>::new();
 
@@ -203,6 +188,11 @@ async fn echo<'d, T: Instance + 'd>(class: &mut CdcAcmClass<'d, Driver<'d, T>>) 
         }
 
         push_str_or_write(&mut accumulator, &data, class).await?;
-        info!("Data: {:x}, len {}, total accumulated: {}", data, data.len(), accumulator.len());
+        info!(
+            "Data: {:x}, len {}, total accumulated: {}",
+            data,
+            data.len(),
+            accumulator.len()
+        );
     }
 }
