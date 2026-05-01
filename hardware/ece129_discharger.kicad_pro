@@ -230,7 +230,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "[REVISION]"
+      "sch_revision": "0.0.2"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -438,7 +438,7 @@
       "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
@@ -505,14 +505,32 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "line_style": 0,
+        "name": "120V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(204, 102, 0)",
+        "tuning_profile": "",
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "/BATT_+": [
+        "120V"
+      ]
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "120V",
+        "pattern": "/BATT_*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

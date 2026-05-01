@@ -5,12 +5,291 @@
 	(uuid "e5ed756f-c80e-4022-a8ad-7a73a7889f41")
 	(paper "B")
 	(title_block
-		(title "[BOARD NAME]")
-		(date "[DATE]")
-		(rev "[REVISION]")
+		(title "Discharger Main Board")
+		(date "2026-04-23")
+		(rev "0.0.2")
 		(company "Formula Slug")
 	)
 	(lib_symbols
+		(symbol "Logic_LevelTranslator:SN74LVC1T45DBV"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -6.35 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SN74LVC1T45DBV"
+				(at 3.81 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf"
+				(at -22.86 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Level-Shifter CMOS-TTL-Translation"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SN74LVC1T45DBV_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0) (xy -0.762 2.032) (xy 1.016 1.016) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -2.54 -1.016) (xy -2.54 0) (xy -4.572 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.794 1.016) (xy 2.794 0) (xy 4.064 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 1.016 -1.778) (xy 1.016 -2.032) (xy -0.762 -1.016) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0) (xy 2.794 -1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SN74LVC1T45DBV_1_1"
+				(pin power_in line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "VCCA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "DIR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 10.16 270)
+					(length 2.54)
+					(name "VCCB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_ST_STM32H5:STM32H503RBTx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1856,6 +2135,116 @@
 		)
 		(uuid "48d5a331-7b7b-438a-ac47-659c791bddb2")
 	)
+	(text_box "Digikey Part number 1528-4684-ND for addressable leds, good price and package, library support"
+		(exclude_from_sim no)
+		(at 359.1269 75.7824 0)
+		(size 39.6531 8.0376)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "18ff59f7-2bc5-4e22-99e7-3ba69e614078")
+	)
+	(text_box "Toggle switch like 28-VTS-1-2Q3PPM-12SGIG-0-ND with cover CWI312-ND"
+		(exclude_from_sim no)
+		(at 358.14 106.2624 0)
+		(size 35.56 8.0376)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3b720e6f-3b38-49ac-b64a-237838e96b07")
+	)
+	(text_box "Need to change to Diodes inc. 74LVC1T45W6-7, probably derive symbol"
+		(exclude_from_sim no)
+		(at 297.18 53.34 0)
+		(size 24.4131 13.1501)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a739c0b9-d4d8-4ee7-bbb9-f226bbc1e195")
+	)
+	(text_box "Maybe duplicate status LEDs to main board too?\n"
+		(exclude_from_sim no)
+		(at 321.0269 80.8299 0)
+		(size 24.4131 13.1501)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c2b16b8e-e4f1-4d5d-ac67-becae399a44f")
+	)
+	(text_box "<= To Battery"
+		(exclude_from_sim no)
+		(at 78.74 147.32 0)
+		(size -17.78 5.9929)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fdc8863a-eeee-4a60-8c3c-d4c04c9aee47")
+	)
+	(wire
+		(pts
+			(xy 320.04 78.74) (xy 340.36 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48f85845-dfc9-484c-a616-fbb9a05d3ffa")
+	)
 	(hierarchical_label "B_CURRENT_PWM"
 		(shape input)
 		(at 93.98 63.5 180)
@@ -1867,16 +2256,27 @@
 		)
 		(uuid "15c952fc-7498-4a4e-9aa0-3b44226a5fc7")
 	)
-	(hierarchical_label "CAN_TX"
+	(hierarchical_label "SHUTDOWN_CONTROL"
 		(shape output)
-		(at 93.98 85.09 180)
+		(at 101.6 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "21167869-e507-4d82-9ccc-228906a987c9")
+		(uuid "17af2864-62f5-4f92-991a-609dfe4a0f70")
+	)
+	(hierarchical_label "~{SCREEN_CS}"
+		(shape output)
+		(at 101.6 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1c5c8425-54a2-4eb8-9ef1-9d14e9de001a")
 	)
 	(hierarchical_label "RP_GATE_READY"
 		(shape input)
@@ -1900,6 +2300,39 @@
 		)
 		(uuid "2f974eaf-d3ca-42b2-8c53-0e3ff1b0bf19")
 	)
+	(hierarchical_label "SCREEN_MOSI"
+		(shape output)
+		(at 101.6 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "31476c21-20ee-4238-b01e-4a3013089ddd")
+	)
+	(hierarchical_label "START_BUTTON"
+		(shape input)
+		(at 340.36 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3571264f-6792-4f68-b4a5-8e5daf188a61")
+	)
+	(hierarchical_label "SCREEN_MISO"
+		(shape input)
+		(at 340.2866 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "37dcd67c-80aa-468c-842f-ce067f69ab4e")
+	)
 	(hierarchical_label "RB_GATE_READY"
 		(shape input)
 		(at 93.98 58.42 180)
@@ -1911,6 +2344,17 @@
 		)
 		(uuid "39e7ff36-19a1-4f02-8f7a-f38189e298e0")
 	)
+	(hierarchical_label "CAN_RX"
+		(shape input)
+		(at 101.6 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55689ea1-eb20-4509-9d50-d66d74dfeffd")
+	)
 	(hierarchical_label "P_CURRENT_PWM"
 		(shape input)
 		(at 93.98 40.64 180)
@@ -1921,6 +2365,28 @@
 			(justify right)
 		)
 		(uuid "58f38e45-f3e6-480a-8a17-cc481e294fb6")
+	)
+	(hierarchical_label "ENC_A"
+		(shape input)
+		(at 340.36 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f482d31-fee0-47b0-ab7b-1757ceb290c5")
+	)
+	(hierarchical_label "CAN_TX"
+		(shape output)
+		(at 101.6 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "69710b25-09c7-49b7-bdac-b99da936c76a")
 	)
 	(hierarchical_label "~{RB_GATE_RST}"
 		(shape output)
@@ -1966,6 +2432,28 @@
 		)
 		(uuid "a98c8dc2-1c68-42f3-9a75-ff42e2182555")
 	)
+	(hierarchical_label "FAN_FAULT"
+		(shape input)
+		(at 93.98 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ac9bf87e-1ea9-44b9-b6d0-f52d72139b90")
+	)
+	(hierarchical_label "SCREEN_MOSI"
+		(shape output)
+		(at 340.2866 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b0d6c6ef-bb35-420a-ab88-8ac983a15de9")
+	)
 	(hierarchical_label "~{RP_GATE_RESET}"
 		(shape output)
 		(at 93.98 27.94 0)
@@ -1977,16 +2465,27 @@
 		)
 		(uuid "b3cff72b-5ed1-4be8-b607-49b2348537d3")
 	)
-	(hierarchical_label "CAN_RX"
+	(hierarchical_label "SCREEN_MISO"
 		(shape input)
-		(at 93.98 87.63 180)
+		(at 101.6 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "ba289fd8-d70c-4778-b6f7-2ad2046e4c7c")
+		(uuid "b9e12cfa-b6e8-4f4d-b979-4b5108f36738")
+	)
+	(hierarchical_label "SCREEN_CLK"
+		(shape output)
+		(at 340.2866 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf70f15f-40e2-45f8-b392-49eaa13b6e5c")
 	)
 	(hierarchical_label "BUS_VOLTAGE_PWM"
 		(shape input)
@@ -2010,6 +2509,50 @@
 		)
 		(uuid "c59ad007-d1b7-4df5-b063-0bf3696ee19f")
 	)
+	(hierarchical_label "SCREEN_CLK"
+		(shape output)
+		(at 101.6 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c86c4651-1417-46f0-884a-9ca89c93102f")
+	)
+	(hierarchical_label "STATUS_LED_DATA"
+		(shape output)
+		(at 340.36 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd316cbc-1295-4158-8dff-88ade8eafccb")
+	)
+	(hierarchical_label "ENC_B"
+		(shape input)
+		(at 340.36 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e80ce860-2a04-4ea9-b620-fb4506b6487a")
+	)
+	(hierarchical_label "~{SCREEN_CS}"
+		(shape output)
+		(at 340.2866 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f46ff957-8a0b-44da-843b-2e93ffd6beb7")
+	)
 	(hierarchical_label "RP_GATE_PWM"
 		(shape output)
 		(at 93.98 25.4 0)
@@ -2020,6 +2563,98 @@
 			(justify left)
 		)
 		(uuid "fa4cc539-55e1-4d9f-8254-6b0a22221ae4")
+	)
+	(symbol
+		(lib_id "Logic_LevelTranslator:SN74LVC1T45DBV")
+		(at 309.88 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41053863-8a0e-4e55-95ee-e9e6528a9e5e")
+		(property "Reference" "U2"
+			(at 327.66 72.3198 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1T45DBV"
+			(at 327.66 74.8598 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 309.88 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf"
+			(at 287.02 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6"
+			(at 309.88 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "12179361-ca0b-4ac8-b4df-70c8048efb79")
+		)
+		(pin "1"
+			(uuid "c1125a8a-fe98-4a08-8619-e085502cf530")
+		)
+		(pin "3"
+			(uuid "b78e7e86-eace-48f9-a4c4-f0a3320bd786")
+		)
+		(pin "5"
+			(uuid "f977148d-ce96-44a0-adbb-6dfc7dc648f1")
+		)
+		(pin "4"
+			(uuid "8b3a160d-3fc9-445c-b0cc-e7555558e4fb")
+		)
+		(pin "2"
+			(uuid "fba8a337-1b1b-449b-b65e-c451fc0bf8c2")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/0b6d399e-4874-4b8e-ba43-f1ecb438e1d8"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "MCU_ST_STM32H5:STM32H503RBTx")
