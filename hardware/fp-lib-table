@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "discharger") (type "KiCad") (uri "${KIPRJMOD}/libraries/discharger.pretty") (options "") (descr ""))
+	(lib (name "discharger") (type "KiCad") (uri "${KIPRJMOD}/libraries/discharger.pretty") (options "") (descr ""))
+)

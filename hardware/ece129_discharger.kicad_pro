@@ -475,7 +475,10 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "discharger",
+      "formula_slug_footprint_library"
+    ],
     "pinned_symbol_libs": [
       "FS_3_Global_Symbol_Library",
       "discharger"
@@ -845,7 +848,7 @@
         "uuid": "553a23ec-442a-4f98-939d-2d5634a662f5"
       }
     ],
-    "used_designators": "C18-19",
+    "used_designators": "R36-37",
     "variants": []
   },
   "sheets": [
