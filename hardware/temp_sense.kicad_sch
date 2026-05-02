@@ -5,9 +5,9 @@
 	(uuid "b0d5128d-2745-4bd0-a815-32029cc51613")
 	(paper "B")
 	(title_block
-		(title "[BOARD NAME]")
+		(title "Discharger Main Board")
 		(date "[DATE]")
-		(rev "[REVISION]")
+		(rev "0.0.3")
 		(company "Formula Slug")
 	)
 	(lib_symbols

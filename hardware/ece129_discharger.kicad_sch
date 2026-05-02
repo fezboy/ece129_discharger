@@ -6,8 +6,8 @@
 	(paper "B")
 	(title_block
 		(title "Discharger Main Board")
-		(date "2026-04-23")
-		(rev "0.0.2")
+		(date "2026-05-02")
+		(rev "0.0.3")
 		(company "Formula Slug")
 		(comment 1 "Maitreyi Patel")
 		(comment 2 "Wesley Rodriguez Kronmiller")

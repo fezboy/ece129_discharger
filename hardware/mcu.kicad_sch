@@ -7,7 +7,7 @@
 	(title_block
 		(title "Discharger Main Board")
 		(date "2026-04-23")
-		(rev "0.0.2")
+		(rev "0.0.3")
 		(company "Formula Slug")
 	)
 	(lib_symbols
