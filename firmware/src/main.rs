@@ -99,10 +99,10 @@ async fn main(_spawner: Spawner) {
             }
 
             board.display.set_position(0, 0).await
-                .unwrap_or_else(|e| {error!("Couldn't set position! {}", e)});
+                .unwrap_or_else(|e| {error!("Couldn't set position! {:#?}", defmt::Debug2Format(&e))});
 
             board.display.write_str(screen_buf.as_str()).await
-                .unwrap_or_else(|e| error!("Couldn't write to display! {}", e));
+                .unwrap_or_else(|e| error!("Couldn't write to display! {:#?}", defmt::Debug2Format(&e)));
 
             Timer::after_millis(16).await;
         }
