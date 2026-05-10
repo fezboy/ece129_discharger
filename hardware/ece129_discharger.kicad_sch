@@ -763,6 +763,204 @@
 		)
 		(uuid "f84da218-f24d-48a1-89b4-e191c973d23d")
 	)
+	(hierarchical_label "Temp7_2"
+		(shape input)
+		(at 101.6 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0176d32d-37d1-4510-8d3e-0d1f33c2b509")
+	)
+	(hierarchical_label "Temp6_2"
+		(shape input)
+		(at 101.6 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "08f2359f-e5b8-480c-b8fc-2242d7956c30")
+	)
+	(hierarchical_label "CurrentSens_Vref"
+		(shape input)
+		(at 92.71 243.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34ab77f9-0840-4c8d-8f99-fc75a4c495c6")
+	)
+	(hierarchical_label "Temp1_1"
+		(shape input)
+		(at 101.6 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3dc398b4-1559-4494-bb0e-764047a96b34")
+	)
+	(hierarchical_label "Temp2_1"
+		(shape input)
+		(at 101.6 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "55f2ef4f-8a91-4838-81a7-255c36d2f420")
+	)
+	(hierarchical_label "Temp8_2"
+		(shape input)
+		(at 101.6 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a1374fc-cec0-4722-9da5-3d888b4a2b5e")
+	)
+	(hierarchical_label "Temp3_1"
+		(shape input)
+		(at 101.6 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e8b161e-dd33-4e7c-be3a-d4024513e4ad")
+	)
+	(hierarchical_label "Temp5_1"
+		(shape input)
+		(at 101.6 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "80875adb-a468-4a6b-8026-b08c353e2aee")
+	)
+	(hierarchical_label "Temp7_1"
+		(shape input)
+		(at 101.6 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93fac837-705d-4839-85dc-9a1708e4a533")
+	)
+	(hierarchical_label "CurrentSens_Out"
+		(shape input)
+		(at 92.71 241.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a86260ae-391d-47d0-ad14-28ac70e372e1")
+	)
+	(hierarchical_label "Temp5_2"
+		(shape input)
+		(at 101.6 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ad46c4c3-9660-487d-a1ef-0f10e60e54c3")
+	)
+	(hierarchical_label "Temp8_1"
+		(shape input)
+		(at 101.6 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "adc76412-0a6e-4b5c-9e4c-efa9cbc10a40")
+	)
+	(hierarchical_label "Temp6_1"
+		(shape input)
+		(at 101.6 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b939db6d-3c3c-440e-a6de-5fa0da991dd0")
+	)
+	(hierarchical_label "Temp1_2"
+		(shape input)
+		(at 101.6 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c0ef9c4c-22a7-4975-b6bd-574dfc109046")
+	)
+	(hierarchical_label "Temp4_1"
+		(shape input)
+		(at 101.6 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c9706b2d-85f8-4991-a480-561f19a6821d")
+	)
+	(hierarchical_label "Temp4_2"
+		(shape input)
+		(at 101.6 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cbb659a1-731e-49e7-9da1-4e5b39c22e0f")
+	)
+	(hierarchical_label "Temp3_2"
+		(shape input)
+		(at 101.6 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f389ae13-aafd-4e51-a052-c8a48e6acb91")
+	)
+	(hierarchical_label "Temp2_2"
+		(shape input)
+		(at 101.6 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fa4fb3e9-e418-4611-af1d-27e4f85e5c52")
+	)
 	(netclass_flag ""
 		(length 2.54)
 		(shape dot)
@@ -793,6 +991,246 @@
 				(font
 					(size 1.27 1.27)
 					(italic yes)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 96.52 81.28 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a8c4c91-ee04-41c3-a8f6-c66dd3deda4b")
+		(property "Reference" "J7"
+			(at 92.964 81.534 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 88.392 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ac6a7732-595b-4594-a858-06a07b8ee292")
+		)
+		(pin "1"
+			(uuid "74fde4bf-47fd-43ac-8b8d-20f6d270e28c")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 96.52 68.58 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d4a6c86-2171-423e-b992-139420fb176f")
+		(property "Reference" "J5"
+			(at 92.964 68.834 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 88.392 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "51995523-93fe-46f7-a328-478e54d72341")
+		)
+		(pin "1"
+			(uuid "96f719ef-bb4b-4ddc-972c-31c602cca3ac")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 96.52 87.63 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4161f723-eb5c-4808-a73b-4b6513d72ae8")
+		(property "Reference" "J8"
+			(at 92.964 87.884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 88.392 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "328f79f1-8ae2-4586-9feb-f15e4b21ecbe")
+		)
+		(pin "1"
+			(uuid "5fbeba27-72ef-491d-b902-049ed25aed55")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J8")
+					(unit 1)
 				)
 			)
 		)
@@ -1039,6 +1477,406 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
+		(at 96.52 100.33 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ba10444-2e98-4e5e-9ae9-515f02e63484")
+		(property "Reference" "J10"
+			(at 92.964 100.584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 88.392 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "912dfc3e-f559-41ad-9072-ec2de0fde934")
+		)
+		(pin "1"
+			(uuid "1a993615-1735-4ed4-b342-4449b6e9e72f")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 96.52 55.88 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "93cd87d8-461f-4274-8948-9385d16db24d")
+		(property "Reference" "J3"
+			(at 92.964 56.134 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 88.392 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dcf9d4ee-314d-42a6-8ec8-f8cee91691ab")
+		)
+		(pin "1"
+			(uuid "8120f651-0b4e-41ac-ad82-dac1566d2ec0")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 87.63 241.3 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "98b6a2d6-34b0-4fa1-94e2-a14b8e938fa0")
+		(property "Reference" "J11"
+			(at 84.074 241.554 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 79.756 243.586 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 87.63 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "28f02a37-354f-4e8e-8977-140faa4fb5cd")
+		)
+		(pin "1"
+			(uuid "5fe80aa1-072d-4c67-9c49-6fadb0805161")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 96.52 62.23 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a94d1b77-8c32-4e75-b763-6a77628bad80")
+		(property "Reference" "J4"
+			(at 92.964 62.484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 88.392 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "deec8dd4-d2dd-444f-ab14-79afb9462ab5")
+		)
+		(pin "1"
+			(uuid "5bed2157-aec5-4e5c-8014-e06c4e08e0a5")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 96.52 93.98 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "daebaa89-58a7-4984-99ce-bfe4ea9fee49")
+		(property "Reference" "J9"
+			(at 92.964 94.234 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 88.392 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0e05f7fa-8743-41ed-af52-218965bc6904")
+		)
+		(pin "1"
+			(uuid "8908e284-a197-4a2b-b47b-315a8774bcb9")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
 		(at 72.39 212.09 0)
 		(mirror y)
 		(unit 1)
@@ -1113,6 +1951,86 @@
 			(project "ece129_discharger"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 96.52 74.93 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ffe5c93d-01cb-41aa-908d-43f6e1de6c27")
+		(property "Reference" "J6"
+			(at 92.964 75.184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 88.392 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c65c1a16-0ae6-4d82-9be8-e225e817f7aa")
+		)
+		(pin "1"
+			(uuid "981ea2b2-cd0c-4b33-bdb1-34abaea83b02")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -1415,8 +2333,8 @@
 		)
 	)
 	(sheet
-		(at 100.965 50.8)
-		(size 26.035 57.15)
+		(at 101.6 50.8)
+		(size 25.4 57.15)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1431,7 +2349,7 @@
 		)
 		(uuid "7756f6ce-96a2-41f3-8f50-742d0a0e9d47")
 		(property "Sheetname" "Temperature Sensor Interface"
-			(at 100.965 50.0884 0)
+			(at 101.6 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1442,7 +2360,7 @@
 			)
 		)
 		(property "Sheetfile" "temp_sense.kicad_sch"
-			(at 100.965 108.5346 0)
+			(at 101.6 108.5346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1462,7 +2380,7 @@
 	)
 	(sheet
 		(at 92.71 208.28)
-		(size 43.18 10.16)
+		(size 43.18 45.72)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1488,7 +2406,7 @@
 			)
 		)
 		(property "Sheetfile" "voltage_current_sense.kicad_sch"
-			(at 92.71 219.0246 0)
+			(at 92.71 254.5846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
