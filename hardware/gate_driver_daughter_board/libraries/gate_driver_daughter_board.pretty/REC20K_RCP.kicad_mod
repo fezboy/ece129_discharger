@@ -1,6 +1,6 @@
 (footprint "REC20K_RCP" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tags "REC20K-2412SZ ")
+  (tags "REC20K-2415SZ ")
   (attr through_hole)
   (fp_text reference "REF**" (at -10.16 2.54 unlocked) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
