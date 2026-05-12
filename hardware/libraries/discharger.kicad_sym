@@ -2,6 +2,285 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
+	(symbol "74LVC1T45W6-7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -6.35 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1T45W6-7"
+			(at 3.81 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 0 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/74LVC1T45.pdf"
+			(at -22.86 -16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Level-Shifter CMOS-TTL-Translation"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "74LVC1T45W6-7_0_1"
+			(rectangle
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 0) (xy -2.54 1.016) (xy -0.762 1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.762 0) (xy -0.762 2.032) (xy 1.016 1.016) (xy -0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.762 -1.016) (xy -2.54 -1.016) (xy -2.54 0) (xy -4.572 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.016 1.016) (xy 2.794 1.016) (xy 2.794 0) (xy 4.064 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.016 0) (xy 1.016 -1.778) (xy 1.016 -2.032) (xy -0.762 -1.016) (xy 1.016 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 0) (xy 2.794 -1.016) (xy 1.016 -1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "74LVC1T45W6-7_1_1"
+			(pin power_in line
+				(at -2.54 10.16 270)
+				(length 2.54)
+				(name "VCCA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "DIR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 10.16 270)
+				(length 2.54)
+				(name "VCCB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "HASS_300S"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -404,7 +683,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 0 25.4 0)
+			(at -13.97 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -413,8 +692,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "NUCLEO-H503RB"
+			(at -2.794 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -423,8 +702,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 0)
+		(property "Footprint" "discharger:NUCLEO-H503RB"
+			(at 0 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -434,8 +713,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
+		(property "Datasheet" "https://www.st.com/resource/en/user_manual/um3121-stm32h5-nucleo64-board-mb1814-stmicroelectronics.pdf"
+			(at 0 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -446,6 +725,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 0 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MCU Datasheet" "https://www.st.com/resource/en/datasheet/stm32h503eb.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -467,10 +757,10 @@
 			)
 		)
 		(symbol "NUCLEO-H503RB_1_1"
-			(unit_name "CN7")
+			(unit_name "GPIO")
 			(rectangle
-				(start -12.7 20.32)
-				(end 12.7 -30.48)
+				(start -16.51 67.31)
+				(end 16.51 -67.31)
 				(stroke
 					(width 0)
 					(type solid)
@@ -480,8 +770,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at -20.32 17.78 0)
-				(length 7.62)
+				(at -25.4 -39.37 0)
+				(length 8.89)
 				(name "PC10"
 					(effects
 						(font
@@ -509,8 +799,8 @@
 				(alternate "USART3_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 20.32 17.78 180)
-				(length 7.62)
+				(at -25.4 -41.91 0)
+				(length 8.89)
 				(name "PC11"
 					(effects
 						(font
@@ -537,8 +827,8 @@
 				(alternate "USART3_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -20.32 15.24 0)
-				(length 7.62)
+				(at -25.4 -44.45 0)
+				(length 8.89)
 				(name "PC12"
 					(effects
 						(font
@@ -564,8 +854,8 @@
 				(alternate "USART3_CK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 20.32 15.24 180)
-				(length 7.62)
+				(at -25.4 -57.15 0)
+				(length 8.89)
 				(name "PD2"
 					(effects
 						(font
@@ -591,153 +881,9 @@
 				(alternate "USART3_CTS" bidirectional line)
 				(alternate "USART3_NSS" bidirectional line)
 			)
-			(pin power_in line
-				(at -20.32 12.7 0)
-				(length 7.62)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 20.32 12.7 180)
-				(length 7.62)
-				(name "E5V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -20.32 10.16 0)
-				(length 7.62)
-				(name "BOOT0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 20.32 10.16 180)
-				(length 7.62)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -20.32 7.62 0)
-				(length 7.62)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 20.32 7.62 180)
-				(length 7.62)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -20.32 5.08 0)
-				(length 7.62)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 20.32 5.08 180)
-				(length 7.62)
-				(name "IOREF"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -20.32 2.54 0)
-				(length 7.62)
+				(at -25.4 41.91 0)
+				(length 8.89)
 				(name "PA13(JTMS"
 					(effects
 						(font
@@ -761,27 +907,9 @@
 				(alternate "USART1_RX" bidirectional line)
 				(alternate "USART2_RX" bidirectional line)
 			)
-			(pin input line
-				(at 20.32 2.54 180)
-				(length 7.62)
-				(name "NRST"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -20.32 0 0)
-				(length 7.62)
+				(at -25.4 39.37 0)
+				(length 8.89)
 				(name "PA14(JTCK"
 					(effects
 						(font
@@ -807,27 +935,9 @@
 				(alternate "USART1_TX" bidirectional line)
 				(alternate "USART2_TX" bidirectional line)
 			)
-			(pin power_out line
-				(at 20.32 0 180)
-				(length 7.62)
-				(name "3V3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -20.32 -2.54 0)
-				(length 7.62)
+				(at -25.4 36.83 0)
+				(length 8.89)
 				(name "PA15(JTDI)"
 					(effects
 						(font
@@ -864,99 +974,9 @@
 				(alternate "USART2_RX" bidirectional line)
 				(alternate "USART3_RX" bidirectional line)
 			)
-			(pin power_out line
-				(at 20.32 -2.54 180)
-				(length 7.62)
-				(name "5V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -20.32 -5.08 0)
-				(length 7.62)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 20.32 -5.08 180)
-				(length 7.62)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -20.32 -7.62 0)
-				(length 7.62)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 20.32 -7.62 180)
-				(length 7.62)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -20.32 -10.16 0)
-				(length 7.62)
+				(at -25.4 -46.99 0)
+				(length 8.89)
 				(name "PC13"
 					(effects
 						(font
@@ -977,27 +997,9 @@
 				(alternate "TAMP_IN1" bidirectional line)
 				(alternate "TAMP_OUT2" bidirectional line)
 			)
-			(pin power_in line
-				(at 20.32 -10.16 180)
-				(length 7.62)
-				(name "VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_24"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -20.32 -12.7 0)
-				(length 7.62)
+				(at -25.4 -49.53 0)
+				(length 8.89)
 				(name "PC14"
 					(effects
 						(font
@@ -1014,27 +1016,9 @@
 				)
 				(alternate "RCC_OSC32_IN" bidirectional line)
 			)
-			(pin no_connect line
-				(at 20.32 -12.7 180)
-				(length 7.62)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_26"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -20.32 -15.24 0)
-				(length 7.62)
+				(at -25.4 -52.07 0)
+				(length 8.89)
 				(name "PC15"
 					(effects
 						(font
@@ -1053,8 +1037,8 @@
 				(alternate "RCC_OSC32_OUT" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 20.32 -15.24 180)
-				(length 7.62)
+				(at -25.4 64.77 0)
+				(length 8.89)
 				(name "PA0"
 					(effects
 						(font
@@ -1098,8 +1082,8 @@
 				(alternate "USART3_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -20.32 -17.78 0)
-				(length 7.62)
+				(at -25.4 -62.23 0)
+				(length 8.89)
 				(name "PH0"
 					(effects
 						(font
@@ -1117,8 +1101,8 @@
 				(alternate "RCC_OSC_IN" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 20.32 -17.78 180)
-				(length 7.62)
+				(at -25.4 62.23 0)
+				(length 8.89)
 				(name "PA1"
 					(effects
 						(font
@@ -1148,8 +1132,8 @@
 				(alternate "USART2_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -20.32 -20.32 0)
-				(length 7.62)
+				(at -25.4 -64.77 0)
+				(length 8.89)
 				(name "PH1"
 					(effects
 						(font
@@ -1167,8 +1151,8 @@
 				(alternate "RCC_OSC_OUT" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 20.32 -20.32 180)
-				(length 7.62)
+				(at -25.4 59.69 0)
+				(length 8.89)
 				(name "PA2"
 					(effects
 						(font
@@ -1197,27 +1181,9 @@
 				(alternate "USART1_TX" bidirectional line)
 				(alternate "USART2_TX" bidirectional line)
 			)
-			(pin power_in line
-				(at -20.32 -22.86 0)
-				(length 7.62)
-				(name "VBAT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN7_33"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 20.32 -22.86 180)
-				(length 7.62)
+				(at -25.4 31.75 0)
+				(length 8.89)
 				(name "PB0"
 					(effects
 						(font
@@ -1243,8 +1209,8 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -20.32 -25.4 0)
-				(length 7.62)
+				(at -25.4 -19.05 0)
+				(length 8.89)
 				(name "PC2"
 					(effects
 						(font
@@ -1272,8 +1238,8 @@
 				(alternate "USART1_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 20.32 -25.4 180)
-				(length 7.62)
+				(at -25.4 -16.51 0)
+				(length 8.89)
 				(name "PC1"
 					(effects
 						(font
@@ -1303,8 +1269,8 @@
 				(alternate "USART1_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -20.32 -27.94 0)
-				(length 7.62)
+				(at -25.4 -21.59 0)
+				(length 8.89)
 				(name "PC3"
 					(effects
 						(font
@@ -1332,8 +1298,8 @@
 				(alternate "USART2_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 20.32 -27.94 180)
-				(length 7.62)
+				(at -25.4 -13.97 0)
+				(length 8.89)
 				(name "PC0"
 					(effects
 						(font
@@ -1355,40 +1321,8 @@
 				(alternate "SPI2_RDY" bidirectional line)
 				(alternate "TIM1_ETR" bidirectional line)
 			)
-		)
-		(symbol "NUCLEO-H503RB_2_1"
-			(unit_name "CN10")
-			(rectangle
-				(start -12.7 20.32)
-				(end 12.7 -30.48)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(pin no_connect line
-				(at -21.59 17.78 0)
-				(length 8.89)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN10_1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 21.59 17.78 180)
+				(at -25.4 -34.29 0)
 				(length 8.89)
 				(name "PC8"
 					(effects
@@ -1416,7 +1350,7 @@
 				(alternate "USART2_CK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 15.24 0)
+				(at -25.4 16.51 0)
 				(length 8.89)
 				(name "PB6"
 					(effects
@@ -1447,26 +1381,8 @@
 				(alternate "USART2_CTS" bidirectional line)
 				(alternate "USART2_NSS" bidirectional line)
 			)
-			(pin no_connect line
-				(at 21.59 15.24 180)
-				(length 8.89)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN10_4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -21.59 12.7 0)
+				(at -25.4 13.97 0)
 				(length 8.89)
 				(name "PB7"
 					(effects
@@ -1500,7 +1416,7 @@
 				(alternate "USART3_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 12.7 180)
+				(at -25.4 -26.67 0)
 				(length 8.89)
 				(name "PC5"
 					(effects
@@ -1526,80 +1442,8 @@
 				(alternate "SPI1_SCK" bidirectional line)
 				(alternate "TIM1_CH4N" bidirectional line)
 			)
-			(pin power_in line
-				(at -21.59 10.16 0)
-				(length 8.89)
-				(name "AVDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN10_7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 21.59 10.16 180)
-				(length 8.89)
-				(name "VBUS_STLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN10_8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -21.59 7.62 0)
-				(length 8.89)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN10_9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 21.59 7.62 180)
-				(length 8.89)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN10_10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -21.59 5.08 0)
+				(at -25.4 57.15 0)
 				(length 8.89)
 				(name "PA5"
 					(effects
@@ -1640,7 +1484,7 @@
 				(alternate "USART3_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 5.08 180)
+				(at -25.4 44.45 0)
 				(length 8.89)
 				(name "PA12"
 					(effects
@@ -1674,7 +1518,7 @@
 				(alternate "USB_DP" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 2.54 0)
+				(at -25.4 54.61 0)
 				(length 8.89)
 				(name "PA6"
 					(effects
@@ -1697,7 +1541,7 @@
 				(alternate "TIM3_CH1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 2.54 180)
+				(at -25.4 6.35 0)
 				(length 8.89)
 				(name "PA11"
 					(effects
@@ -1732,7 +1576,7 @@
 				(alternate "USB_DM" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 0 0)
+				(at -25.4 52.07 0)
 				(length 8.89)
 				(name "PA7"
 					(effects
@@ -1771,7 +1615,7 @@
 				(alternate "USART3_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 0 180)
+				(at -25.4 3.81 0)
 				(length 8.89)
 				(name "PB12"
 					(effects
@@ -1796,7 +1640,7 @@
 				(alternate "USART3_CK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 -2.54 0)
+				(at -25.4 -36.83 0)
 				(length 8.89)
 				(name "PC9"
 					(effects
@@ -1826,26 +1670,8 @@
 				(alternate "USART3_DE" bidirectional line)
 				(alternate "USART3_RTS" bidirectional line)
 			)
-			(pin no_connect line
-				(at 21.59 -2.54 180)
-				(length 8.89)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN10_18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -21.59 -5.08 0)
+				(at -25.4 -29.21 0)
 				(length 8.89)
 				(name "PC6"
 					(effects
@@ -1870,26 +1696,8 @@
 				(alternate "TIM3_CH1" bidirectional line)
 				(alternate "USART2_TX" bidirectional line)
 			)
-			(pin power_in line
-				(at 21.59 -5.08 180)
-				(length 8.89)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN10_20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -21.59 -7.62 0)
+				(at -25.4 -31.75 0)
 				(length 8.89)
 				(name "PC7"
 					(effects
@@ -1917,7 +1725,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 -7.62 180)
+				(at -25.4 26.67 0)
 				(length 8.89)
 				(name "PB2"
 					(effects
@@ -1948,7 +1756,7 @@
 				(alternate "USART2_CK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 -10.16 0)
+				(at -25.4 49.53 0)
 				(length 8.89)
 				(name "PA8"
 					(effects
@@ -1984,7 +1792,7 @@
 				(alternate "USB_SOF" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 -10.16 180)
+				(at -25.4 29.21 0)
 				(length 8.89)
 				(name "PB1"
 					(effects
@@ -2015,7 +1823,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 -12.7 0)
+				(at -25.4 8.89 0)
 				(length 8.89)
 				(name "PB10"
 					(effects
@@ -2047,7 +1855,7 @@
 				(alternate "USART3_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 -12.7 180)
+				(at -25.4 -6.35 0)
 				(length 8.89)
 				(name "PB15"
 					(effects
@@ -2086,7 +1894,7 @@
 				(alternate "USART3_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 -15.24 0)
+				(at -25.4 21.59 0)
 				(length 8.89)
 				(name "PB4(NJTRST)"
 					(effects
@@ -2120,7 +1928,7 @@
 				(alternate "USART2_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 -15.24 180)
+				(at -25.4 -3.81 0)
 				(length 8.89)
 				(name "PB14"
 					(effects
@@ -2147,7 +1955,7 @@
 				(alternate "USART3_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 -17.78 0)
+				(at -25.4 19.05 0)
 				(length 8.89)
 				(name "PB5"
 					(effects
@@ -2182,7 +1990,7 @@
 				(alternate "USART2_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 -17.78 180)
+				(at -25.4 1.27 0)
 				(length 8.89)
 				(name "PB13"
 					(effects
@@ -2211,7 +2019,7 @@
 				(alternate "USART3_NSS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 -20.32 0)
+				(at -25.4 24.13 0)
 				(length 8.89)
 				(name "PB3(JTDO"
 					(effects
@@ -2244,26 +2052,8 @@
 				(alternate "TIM2_CH2" bidirectional line)
 				(alternate "USART3_TX" bidirectional line)
 			)
-			(pin power_in line
-				(at 21.59 -20.32 180)
-				(length 8.89)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "CN10_32"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -21.59 -22.86 0)
+				(at -25.4 46.99 0)
 				(length 8.89)
 				(name "PA10"
 					(effects
@@ -2285,7 +2075,7 @@
 				(alternate "USART1_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 -22.86 180)
+				(at -25.4 -24.13 0)
 				(length 8.89)
 				(name "PC4"
 					(effects
@@ -2310,7 +2100,7 @@
 				(alternate "USART3_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 -25.4 0)
+				(at -25.4 -1.27 0)
 				(length 8.89)
 				(name "PB14"
 					(effects
@@ -2337,7 +2127,7 @@
 				(alternate "USART3_RTS" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 21.59 -25.4 180)
+				(at -25.4 11.43 0)
 				(length 8.89)
 				(name "PB8"
 					(effects
@@ -2371,7 +2161,7 @@
 				(alternate "USART3_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -21.59 -27.94 0)
+				(at -25.4 -8.89 0)
 				(length 8.89)
 				(name "PB15"
 					(effects
@@ -2409,9 +2199,411 @@
 				(alternate "USART3_CTS" bidirectional line)
 				(alternate "USART3_NSS" bidirectional line)
 			)
-			(pin no_connect line
-				(at 21.59 -27.94 180)
+		)
+		(symbol "NUCLEO-H503RB_2_1"
+			(unit_name "Power")
+			(rectangle
+				(start -12.7 20.32)
+				(end 12.7 1.27)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin power_in line
+				(at 0 29.21 270)
 				(length 8.89)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 7.62 29.21 270)
+				(length 8.89)
+				(name "E5V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -21.59 7.62 0)
+				(length 8.89)
+				(name "BOOT0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 1.27 0)
+				(length 7.62)
+				(hide yes)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 1.27 0)
+				(length 7.62)
+				(hide yes)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 1.27 0)
+				(length 7.62)
+				(hide yes)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 21.59 10.16 180)
+				(length 8.89)
+				(name "IOREF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -21.59 12.7 0)
+				(length 8.89)
+				(name "NRST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 21.59 12.7 180)
+				(length 8.89)
+				(name "3V3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 21.59 15.24 180)
+				(length 8.89)
+				(name "5V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 1.27 0)
+				(length 7.62)
+				(hide yes)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 29.21 270)
+				(length 8.89)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 1.27 0)
+				(length 7.62)
+				(hide yes)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 29.21 270)
+				(length 8.89)
+				(name "VBAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN7_33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 1.27 180)
+				(length 8.89)
+				(hide yes)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN10_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 1.27 180)
+				(length 8.89)
+				(hide yes)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN10_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -7.62 29.21 270)
+				(length 8.89)
+				(name "AVDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN10_7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 21.59 7.62 180)
+				(length 8.89)
+				(name "VBUS_STLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN10_8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 1.27 180)
+				(length 8.89)
+				(hide yes)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN10_10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 1.27 180)
+				(length 8.89)
+				(hide yes)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN10_18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -5.08 -10.16 90)
+				(length 11.43)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CN10_32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 1.27 180)
+				(length 8.89)
+				(hide yes)
 				(name ""
 					(effects
 						(font
@@ -2420,6 +2612,24 @@
 					)
 				)
 				(number "CN10_38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 7.62 -10.16 90)
+				(length 11.43)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "[CN10_9,CN10_20,CN7_8,CN7_19,CN7_20,CN7_22]"
 					(effects
 						(font
 							(size 1.27 1.27)
