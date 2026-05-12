@@ -855,7 +855,7 @@
         "uuid": "553a23ec-442a-4f98-939d-2d5634a662f5"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR20,#PWR26,C11,C20-22,R38-42,U12",
     "variants": []
   },
   "sheets": [
