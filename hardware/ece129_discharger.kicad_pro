@@ -768,6 +768,12 @@
           "label": "Digi URL",
           "name": "Digi URL",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MCU Datasheet",
+          "name": "MCU Datasheet",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -855,7 +861,7 @@
         "uuid": "553a23ec-442a-4f98-939d-2d5634a662f5"
       }
     ],
-    "used_designators": "#PWR20,#PWR26,C11,C20-22,R38-42,U12",
+    "used_designators": "R32-33",
     "variants": []
   },
   "sheets": [
