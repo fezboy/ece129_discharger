@@ -2,4 +2,7 @@
 	(version 7)
 	(lib (name "discharger") (type "KiCad") (uri "${KIPRJMOD}/libraries/discharger.pretty") (options "") (descr ""))
 	(lib (name "discharger") (type "KiCad") (uri "${KIPRJMOD}/libraries/discharger.pretty") (options "") (descr ""))
+	(lib (name "gate_driver_daughter_board") (type "KiCad") (uri "${KIPRJMOD}/gate_driver_daughter_board/libraries/gate_driver_daughter_board.pretty") (options "") (descr ""))
+	(lib (name "gate_driver_daughter_board-backups") (type "KiCad") (uri "${KIPRJMOD}/gate_driver_daughter_board/gate_driver_daughter_board-backups.pretty") (options "") (descr ""))
+	(lib (name "gate_driver_daughter_board-backups") (type "KiCad") (uri "${KIPRJMOD}/gate_driver_daughter_board/gate_driver_daughter_board-backups.pretty") (options "") (descr ""))
 )
