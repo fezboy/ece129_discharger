@@ -763,28 +763,6 @@
 		)
 		(uuid "f84da218-f24d-48a1-89b4-e191c973d23d")
 	)
-	(hierarchical_label "Temp7_2"
-		(shape input)
-		(at 101.6 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0176d32d-37d1-4510-8d3e-0d1f33c2b509")
-	)
-	(hierarchical_label "Temp6_2"
-		(shape input)
-		(at 101.6 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "08f2359f-e5b8-480c-b8fc-2242d7956c30")
-	)
 	(hierarchical_label "CurrentSens_Vref"
 		(shape input)
 		(at 92.71 243.84 0)
@@ -796,72 +774,6 @@
 		)
 		(uuid "34ab77f9-0840-4c8d-8f99-fc75a4c495c6")
 	)
-	(hierarchical_label "Temp1_1"
-		(shape input)
-		(at 101.6 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3dc398b4-1559-4494-bb0e-764047a96b34")
-	)
-	(hierarchical_label "Temp2_1"
-		(shape input)
-		(at 101.6 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "55f2ef4f-8a91-4838-81a7-255c36d2f420")
-	)
-	(hierarchical_label "Temp8_2"
-		(shape input)
-		(at 101.6 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5a1374fc-cec0-4722-9da5-3d888b4a2b5e")
-	)
-	(hierarchical_label "Temp3_1"
-		(shape input)
-		(at 101.6 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6e8b161e-dd33-4e7c-be3a-d4024513e4ad")
-	)
-	(hierarchical_label "Temp5_1"
-		(shape input)
-		(at 101.6 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "80875adb-a468-4a6b-8026-b08c353e2aee")
-	)
-	(hierarchical_label "Temp7_1"
-		(shape input)
-		(at 101.6 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "93fac837-705d-4839-85dc-9a1708e4a533")
-	)
 	(hierarchical_label "CurrentSens_Out"
 		(shape input)
 		(at 92.71 241.3 0)
@@ -872,94 +784,6 @@
 			(justify left)
 		)
 		(uuid "a86260ae-391d-47d0-ad14-28ac70e372e1")
-	)
-	(hierarchical_label "Temp5_2"
-		(shape input)
-		(at 101.6 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ad46c4c3-9660-487d-a1ef-0f10e60e54c3")
-	)
-	(hierarchical_label "Temp8_1"
-		(shape input)
-		(at 101.6 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "adc76412-0a6e-4b5c-9e4c-efa9cbc10a40")
-	)
-	(hierarchical_label "Temp6_1"
-		(shape input)
-		(at 101.6 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b939db6d-3c3c-440e-a6de-5fa0da991dd0")
-	)
-	(hierarchical_label "Temp1_2"
-		(shape input)
-		(at 101.6 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c0ef9c4c-22a7-4975-b6bd-574dfc109046")
-	)
-	(hierarchical_label "Temp4_1"
-		(shape input)
-		(at 101.6 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c9706b2d-85f8-4991-a480-561f19a6821d")
-	)
-	(hierarchical_label "Temp4_2"
-		(shape input)
-		(at 101.6 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cbb659a1-731e-49e7-9da1-4e5b39c22e0f")
-	)
-	(hierarchical_label "Temp3_2"
-		(shape input)
-		(at 101.6 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f389ae13-aafd-4e51-a052-c8a48e6acb91")
-	)
-	(hierarchical_label "Temp2_2"
-		(shape input)
-		(at 101.6 64.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fa4fb3e9-e418-4611-af1d-27e4f85e5c52")
 	)
 	(netclass_flag ""
 		(length 2.54)
@@ -2334,7 +2158,7 @@
 	)
 	(sheet
 		(at 101.6 50.8)
-		(size 25.4 57.15)
+		(size 29.21 57.15)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2368,6 +2192,226 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Temp1_1" input
+			(at 101.6 55.88 180)
+			(uuid "7517a4d6-410a-424f-b0fa-6f4f99865d28")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp1_2" input
+			(at 101.6 58.42 180)
+			(uuid "466d6a81-499b-4333-b38d-4d5d2e8ede88")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp2_1" input
+			(at 101.6 62.23 180)
+			(uuid "dc2d9c60-5757-48fc-8a46-fd0dc52240b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp2_2" input
+			(at 101.6 64.77 180)
+			(uuid "99275233-03d2-48e3-8ffb-820fd71f21d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp3_1" input
+			(at 101.6 68.58 180)
+			(uuid "1b75fad0-4eaa-4d55-9085-e73f27e4c018")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp3_2" input
+			(at 101.6 71.12 180)
+			(uuid "5285fa25-4a6a-44e4-9dfd-1e8832116761")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp4_1" input
+			(at 101.6 74.93 180)
+			(uuid "82456e4b-08c3-4b12-a591-05263fcb273c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp4_2" input
+			(at 101.6 77.47 180)
+			(uuid "45db6d41-7aba-4639-9316-a98d65e41eeb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp5_1" input
+			(at 101.6 81.28 180)
+			(uuid "0ec9469a-1b20-45e4-8d4e-656a7597305d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp5_2" input
+			(at 101.6 83.82 180)
+			(uuid "b0e6900b-ca20-416b-b32a-15c67c824eef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp6_1" input
+			(at 101.6 87.63 180)
+			(uuid "c490db43-eaa1-44f5-8e94-9592bd58ee06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp6_2" input
+			(at 101.6 90.17 180)
+			(uuid "19f83582-deb6-4aba-939c-a08d8d2c1b1c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp7_1" input
+			(at 101.6 93.98 180)
+			(uuid "9e93ce79-be1a-4030-b6c9-7cc4afcc3220")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp7_2" input
+			(at 101.6 96.52 180)
+			(uuid "f052e1d6-c858-48a0-9d91-ae4262d5517e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp8_1" input
+			(at 101.6 100.33 180)
+			(uuid "2c64c4ec-8478-4681-8ab9-020d9134ce01")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Temp8_2" input
+			(at 101.6 102.87 180)
+			(uuid "a9a9f04a-5b59-45be-8b88-d66ea5a2b3be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TempSensing1" output
+			(at 130.81 55.88 0)
+			(uuid "ec7f9185-d8d0-4ea6-bf64-94df59caac46")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TempSensing1_A" input
+			(at 130.81 62.23 0)
+			(uuid "2df99528-0d81-497c-a34f-87d5065accba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TempSensing1_B" input
+			(at 130.81 64.77 0)
+			(uuid "a7c5feea-14de-4a6d-8c1b-65bc46cd842b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TempSensing2" output
+			(at 130.81 81.28 0)
+			(uuid "49d3c587-5b55-4f62-8734-be74beb3262d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TempSensing2_A" input
+			(at 130.81 87.63 0)
+			(uuid "280eb6ce-b088-4fe4-b8e9-e3297179df13")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TempSensing2_B" input
+			(at 130.81 90.17 0)
+			(uuid "b8723ad9-eeac-4de6-a1a7-d8d7d86390dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
