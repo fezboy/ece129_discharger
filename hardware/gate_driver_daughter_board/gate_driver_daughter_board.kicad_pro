@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8636,
-          "height": 2.1336,
-          "width": 2.1336
+          "drill": 1.143,
+          "height": 2.413,
+          "width": 2.413
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,12 +60,21 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "hole_clearance|151384000|64347000|057fa713-b5c2-40a0-8ada-2546dc6ad6c5|731e6cae-7802-46ca-8186-91c9e5c531ed",
+          ""
+        ],
+        [
+          "hole_clearance|152080777|65043776|f644db37-478b-4dd0-80fc-eedc0373d99d|731e6cae-7802-46ca-8186-91c9e5c531ed",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "ignore",
         "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
@@ -104,7 +113,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -194,7 +203,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.254,
+        0.4064,
+        0.508
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -226,6 +238,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 1.524,
+          "drill": 0.4064
         }
       ],
       "zones_allow_external_fillets": true
@@ -526,7 +542,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "out/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
