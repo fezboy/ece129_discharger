@@ -60,16 +60,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "hole_clearance|151384000|64347000|057fa713-b5c2-40a0-8ada-2546dc6ad6c5|731e6cae-7802-46ca-8186-91c9e5c531ed",
-          ""
-        ],
-        [
-          "hole_clearance|152080777|65043776|f644db37-478b-4dd0-80fc-eedc0373d99d|731e6cae-7802-46ca-8186-91c9e5c531ed",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -141,7 +132,7 @@
         "max_error": 0.005,
         "min_clearance": 0.254,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.635,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.254,
