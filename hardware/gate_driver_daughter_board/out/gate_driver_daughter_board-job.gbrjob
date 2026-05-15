@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "10.0.0"
     },
-    "CreationDate": "2026-05-14T17:45:27-07:00"
+    "CreationDate": "2026-05-14T19:44:10-07:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "gate_driver_daughter_board",
       "GUID": "67617465-5f64-4726-9976-65725f646175",
-      "Revision": "rev?"
+      "Revision": "V1.1"
     },
     "Size": {
       "X": 103.0905,
@@ -34,28 +34,28 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "gate_driver_daughter_board-F_Cu.gtl",
+      "Path": "gate_driver_daughter_board-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "gate_driver_daughter_board-B_Cu.gbl",
+      "Path": "gate_driver_daughter_board-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "gate_driver_daughter_board-F_Silkscreen.gto",
+      "Path": "gate_driver_daughter_board-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "gate_driver_daughter_board-B_Silkscreen.gbo",
-      "FileFunction": "Legend,Bot",
+      "Path": "gate_driver_daughter_board-Edge_Cuts.gbr",
+      "FileFunction": "Profile",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "gate_driver_daughter_board-Edge_Cuts.gm1",
-      "FileFunction": "Profile",
+      "Path": "gate_driver_daughter_board-User_1.gbr",
+      "FileFunction": "Other,User",
       "FilePolarity": "Positive"
     }
   ],
