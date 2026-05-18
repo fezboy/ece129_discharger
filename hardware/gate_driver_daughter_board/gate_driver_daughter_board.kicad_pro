@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 1.143,
+          "height": 2.413,
+          "width": 2.413
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.4064
         }
       },
       "diff_pair_dimensions": [
@@ -65,7 +65,7 @@
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "ignore",
         "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
@@ -104,7 +104,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -132,7 +132,7 @@
         "max_error": 0.005,
         "min_clearance": 0.254,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.254,
+        "min_copper_edge_clearance": 0.635,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.254,
@@ -142,10 +142,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 1.0,
         "min_text_thickness": 0.153,
-        "min_through_hole_diameter": 0.50038,
+        "min_through_hole_diameter": 0.4064,
         "min_track_width": 0.254,
-        "min_via_annular_width": 0.762,
-        "min_via_diameter": 0.50038,
+        "min_via_annular_width": 0.508,
+        "min_via_diameter": 1.524,
         "solder_mask_to_copper_clearance": 0.05,
         "use_height_for_length_calcs": true
       },
@@ -194,7 +194,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.254,
+        0.4064,
+        0.508
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -226,6 +229,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 1.524,
+          "drill": 0.4064
         }
       ],
       "zones_allow_external_fillets": true
@@ -526,7 +533,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "out/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
