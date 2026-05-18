@@ -511,11 +511,7 @@
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "/BATT_+": [
-        "120V"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -861,7 +857,7 @@
         "uuid": "553a23ec-442a-4f98-939d-2d5634a662f5"
       }
     ],
-    "used_designators": "#PWR20,#PWR26,C11,C20-22,R38-42,U12",
+    "used_designators": "J2,J11-17,#FLG1-5,R16-24,R27,R32-33,R44-60,D1,#PWR20,#PWR24-53,#PWR56,#PWR64-65,#PWR68-91,U4-8,U12-18,C9-12,C22-34,Q1-2,SW1",
     "variants": []
   },
   "sheets": [
@@ -878,8 +874,8 @@
       "Temperature Sensor Interface"
     ],
     [
-      "98594cde-9185-4890-9c69-9d9c5b8afa45",
-      "Voltage Sense Amplifier"
+      "471106a5-4e31-45e5-a876-4db7a8901102",
+      "Voltage Sense Amplifier1"
     ]
   ],
   "text_variables": {},
