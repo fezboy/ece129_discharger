@@ -5169,6 +5169,10 @@
 		(uuid "8554c48e-4a02-4b8d-9eb1-5473b90cd2fb")
 	)
 	(no_connect
+		(at 146.05 77.47)
+		(uuid "8d77c895-402b-4c19-9518-d30a4382fe93")
+	)
+	(no_connect
 		(at 146.05 153.67)
 		(uuid "9b87e9f9-5ced-4853-ae98-125c07163846")
 	)
@@ -5620,17 +5624,6 @@
 			(justify right)
 		)
 		(uuid "a98c8dc2-1c68-42f3-9a75-ff42e2182555")
-	)
-	(hierarchical_label "FAN_FAULT"
-		(shape input)
-		(at 146.05 77.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ac9bf87e-1ea9-44b9-b6d0-f52d72139b90")
 	)
 	(hierarchical_label "SCREEN_SDA"
 		(shape output)

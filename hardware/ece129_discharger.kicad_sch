@@ -359,6 +359,222 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x04"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x04_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x08"
 			(pin_names
 				(offset 1.016)
@@ -2145,6 +2361,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_FET:AO3400A"
 			(pin_names
 				(offset 0)
@@ -3350,7 +3716,7 @@
 		(uuid "df3b161f-2b12-4886-acea-1d2074b7517f")
 	)
 	(rectangle
-		(start 349.25 144.78)
+		(start 349.25 132.08)
 		(end 408.94 207.01)
 		(stroke
 			(width 0.254)
@@ -3428,7 +3794,7 @@
 	)
 	(text "To Formula Slug Battery"
 		(exclude_from_sim no)
-		(at 378.206 150.114 0)
+		(at 378.714 137.16 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3475,6 +3841,12 @@
 			)
 		)
 		(uuid "b7d06e35-d7ca-40bb-8dbf-f8d699bbb7ad")
+	)
+	(junction
+		(at 367.03 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2338334f-88dd-49b1-9e8d-9e5c9bd9ac22")
 	)
 	(junction
 		(at 299.72 200.66)
@@ -3525,6 +3897,12 @@
 		(uuid "9696bb68-6ca2-43e5-a2d8-b5fa6043fc44")
 	)
 	(junction
+		(at 382.27 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f92d051-bba8-4755-a8c6-e4f8012c597e")
+	)
+	(junction
 		(at 140.97 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3541,6 +3919,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e00c43b6-88e4-4f25-9fd1-8f251984e651")
+	)
+	(junction
+		(at 379.73 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e41af8e7-acd2-4f98-8731-124c384c29fa")
 	)
 	(junction
 		(at 382.27 184.15)
@@ -3560,15 +3944,13 @@
 		(color 0 0 0 0)
 		(uuid "efcdd2f0-bf8d-4add-932f-291ba5db8190")
 	)
-	(junction
-		(at 365.76 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f32e4a3e-9d07-4813-9584-1db3d237b5c9")
-	)
 	(no_connect
 		(at 311.15 63.5)
 		(uuid "039c2a14-5f58-4c44-a87c-c062f05fb253")
+	)
+	(no_connect
+		(at 148.59 116.84)
+		(uuid "78773fcc-a36e-4c55-a67d-f7ca364ac337")
 	)
 	(no_connect
 		(at 308.61 151.13)
@@ -3600,13 +3982,43 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 165.1) (xy 369.57 165.1)
+			(xy 379.73 152.4) (xy 379.73 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01e95b14-342d-4748-8c26-49ab3b30514d")
+	)
+	(wire
+		(pts
+			(xy 359.41 165.1) (xy 367.03 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "029cce7c-f649-4c07-ae8e-1fc5c10a5c0f")
+	)
+	(wire
+		(pts
+			(xy 119.38 229.87) (xy 116.84 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08507d9a-1998-47ff-9515-983ee18b5051")
+	)
+	(wire
+		(pts
+			(xy 375.92 152.4) (xy 379.73 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08f213b5-5e73-4a20-9182-e1c31e353d77")
 	)
 	(wire
 		(pts
@@ -3720,6 +4132,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 160.02) (xy 367.03 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fd06216-15cb-462a-a8cb-5932bb25bc95")
+	)
+	(wire
+		(pts
 			(xy 266.7 68.58) (xy 298.45 68.58)
 		)
 		(stroke
@@ -3740,16 +4162,6 @@
 	)
 	(wire
 		(pts
-			(xy 398.78 161.29) (xy 365.76 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21f70d18-8870-48b6-9050-4f22cdef7184")
-	)
-	(wire
-		(pts
 			(xy 191.77 49.53) (xy 205.74 49.53)
 		)
 		(stroke
@@ -3767,6 +4179,16 @@
 			(type default)
 		)
 		(uuid "22cfe9d1-7571-4a8f-b9b5-4005771f27ea")
+	)
+	(wire
+		(pts
+			(xy 382.27 160.02) (xy 396.24 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24cd0d76-ea2d-4543-844a-27af900dea2e")
 	)
 	(wire
 		(pts
@@ -3817,6 +4239,16 @@
 			(type default)
 		)
 		(uuid "351d02dc-a23c-4dc3-97e5-e6b258b4db31")
+	)
+	(wire
+		(pts
+			(xy 386.08 151.13) (xy 382.27 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "352b54da-cce0-43c4-9077-6ee6083bcb26")
 	)
 	(wire
 		(pts
@@ -3900,6 +4332,16 @@
 	)
 	(wire
 		(pts
+			(xy 386.08 148.59) (xy 386.08 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4be0f5dd-895e-41c2-b7cd-b09e4be7daab")
+	)
+	(wire
+		(pts
 			(xy 295.91 135.89) (xy 308.61 135.89)
 		)
 		(stroke
@@ -3917,6 +4359,26 @@
 			(type default)
 		)
 		(uuid "50633454-d528-4753-a68e-186e46d2a051")
+	)
+	(wire
+		(pts
+			(xy 375.92 148.59) (xy 375.92 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53a79625-6b62-4257-bf3a-24c0d8962f51")
+	)
+	(wire
+		(pts
+			(xy 382.27 151.13) (xy 382.27 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "576cf840-4706-4c56-ac7d-382f6be258d7")
 	)
 	(wire
 		(pts
@@ -4040,6 +4502,16 @@
 	)
 	(wire
 		(pts
+			(xy 379.73 160.02) (xy 367.03 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73aa3186-3882-478d-ba6b-f00d8e8a252a")
+	)
+	(wire
+		(pts
 			(xy 153.67 229.87) (xy 205.74 229.87)
 		)
 		(stroke
@@ -4100,23 +4572,13 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 165.1) (xy 398.78 165.1)
+			(xy 382.27 165.1) (xy 396.24 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8677ad38-96a2-48ef-9391-25f508df4cd3")
-	)
-	(wire
-		(pts
-			(xy 359.41 165.1) (xy 365.76 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d74780e-49c4-418a-8106-3fd540abce7b")
 	)
 	(wire
 		(pts
@@ -4137,6 +4599,16 @@
 			(type default)
 		)
 		(uuid "9069bcb5-039b-428a-864b-c7657feb3eca")
+	)
+	(wire
+		(pts
+			(xy 367.03 165.1) (xy 369.57 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b74423-f0ba-4fc4-8de6-4d1255aff1b0")
 	)
 	(wire
 		(pts
@@ -4227,6 +4699,16 @@
 			(type default)
 		)
 		(uuid "a750c39f-60e0-4600-8f24-2df62d40f555")
+	)
+	(wire
+		(pts
+			(xy 396.24 160.02) (xy 396.24 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9c142ae-9a29-4bc2-b9d9-7e2f2883f21d")
 	)
 	(wire
 		(pts
@@ -4330,16 +4812,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 116.84) (xy 205.74 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6cff375-a6e2-462c-a7d7-9968314996f4")
-	)
-	(wire
-		(pts
 			(xy 392.43 194.31) (xy 398.78 194.31)
 		)
 		(stroke
@@ -4370,16 +4842,6 @@
 	)
 	(wire
 		(pts
-			(xy 398.78 165.1) (xy 398.78 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2f05f9a-9c21-45b2-9e37-d827cb450b35")
-	)
-	(wire
-		(pts
 			(xy 330.2 172.72) (xy 369.57 172.72)
 		)
 		(stroke
@@ -4387,16 +4849,6 @@
 			(type default)
 		)
 		(uuid "d54acc23-0576-4462-b0be-c2b453706cea")
-	)
-	(wire
-		(pts
-			(xy 365.76 161.29) (xy 365.76 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd96eec2-04f8-4551-844b-7a59b56ad42d")
 	)
 	(wire
 		(pts
@@ -4600,17 +5052,6 @@
 		)
 		(uuid "c8a56cd1-35e3-4920-b221-64f5001b5efe")
 	)
-	(label "FAN_FAULT"
-		(at 151.13 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left bottom)
-		)
-		(uuid "f84da218-f24d-48a1-89b4-e191c973d23d")
-	)
 	(symbol
 		(lib_id "Device:C")
 		(at 104.14 109.22 0)
@@ -4644,7 +5085,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 105.1052 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4687,6 +5128,129 @@
 			(project "ece129_discharger"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 381 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "0532cb64-cbd0-40c5-b420-2626f139770b")
+		(property "Reference" "SW2"
+			(at 381 143.256 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Interlock"
+			(at 381 145.034 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 381 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 381 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 381 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Link" ""
+			(at 381 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 381 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33850283-ee87-43a2-8f73-499b543a8129")
+		)
+		(pin "2"
+			(uuid "06b616b2-8179-4281-ab8b-754701a2feab")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -4958,7 +5522,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105310-xx10_2x05_P2.50mm_Vertical"
 			(at 303.53 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5188,6 +5752,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 111.76 234.95 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "299e6fe0-8094-4ed4-8984-81ab88f74dc5")
+		(property "Reference" "J19"
+			(at 108.204 229.108 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 104.14 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
+			(at 111.76 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 111.76 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8560258a-66b8-47a6-82d2-31ff18460932")
+		)
+		(pin "4"
+			(uuid "41b06a15-764b-4632-8566-5d0d69dcb1b8")
+		)
+		(pin "2"
+			(uuid "e9872a93-70be-4a55-99f0-fa3f8e098679")
+		)
+		(pin "3"
+			(uuid "330a1009-ab1c-4cac-9201-03c549c33d67")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 129.54 153.67 180)
 		(unit 1)
@@ -5219,7 +5868,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 129.54 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -5299,7 +5948,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 157.48 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -5379,7 +6028,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 157.48 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -5692,7 +6341,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 101.6 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -5849,7 +6498,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 157.48 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -5929,7 +6578,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx08_1x08_P2.50mm_Vertical"
 			(at 311.15 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -6128,7 +6777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 79.7052 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -6367,7 +7016,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 87.63 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -6647,7 +7296,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 195.58 160.528 90)
 			(hide yes)
 			(show_name no)
@@ -6805,7 +7454,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx03_1x03_P2.50mm_Vertical"
 			(at 143.51 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6935,86 +7584,6 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 111.76 232.41 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "826b3677-eac7-44de-8761-9f9ea7065c3f")
-		(property "Reference" "J15"
-			(at 108.204 232.664 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 103.886 234.696 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 111.76 232.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d5159e28-0d34-4e94-a9dd-cfbc8765e147")
-		)
-		(pin "1"
-			(uuid "0aa23203-3b1d-42c7-a3cb-e7af7aeab2f9")
-		)
-		(instances
-			(project "ece129_discharger"
-				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
-					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
 		(at 157.48 87.63 0)
 		(mirror y)
 		(unit 1)
@@ -7045,7 +7614,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 157.48 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -7125,7 +7694,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx08_1x08_P2.50mm_Vertical"
 			(at 313.69 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -7326,7 +7895,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 157.48 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -7572,7 +8141,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 157.48 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -7807,7 +8376,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 387.35 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -7856,6 +8425,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 116.84 237.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b13d2420-d518-49c4-a855-7ad284b26d88")
+		(property "Reference" "#PWR054"
+			(at 116.84 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 237.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "037d485f-612b-4197-b807-2192b739973d")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Top_Bottom")
 		(at 374.65 170.18 0)
 		(unit 1)
@@ -7867,7 +8513,7 @@
 		(dnp no)
 		(uuid "b27ae733-2c33-4581-b16a-9971a6995d7b")
 		(property "Reference" "J13"
-			(at 375.666 156.21 0)
+			(at 368.3 177.546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7877,7 +8523,7 @@
 			)
 		)
 		(property "Value" "Conn_02x05_Top_Bottom"
-			(at 375.666 158.75 0)
+			(at 366.268 179.578 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7886,7 +8532,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105310-xx10_2x05_P2.50mm_Vertical"
 			(at 374.65 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7953,6 +8599,87 @@
 			(project "ece129_discharger"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
 					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 379.73 154.94 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b293f4b6-d457-4f9d-bbbe-469be2b77d9d")
+		(property "Reference" "J20"
+			(at 388.62 153.416 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 396.24 155.194 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
+			(at 379.73 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 379.73 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 379.73 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38109b0c-f86a-40a3-9a95-ca4848b7f3ae")
+		)
+		(pin "2"
+			(uuid "f73e331d-1b83-4ccc-8ac2-2e793b67691b")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "J20")
 					(unit 1)
 				)
 			)
@@ -8530,7 +9257,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 157.48 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -8573,6 +9300,84 @@
 			(project "ece129_discharger"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 119.38 229.87 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e7e241f9-1d93-4f9d-a407-1edeffaa9d9d")
+		(property "Reference" "#PWR055"
+			(at 119.38 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 119.38 226.314 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0946148d-d0bf-4112-a6e5-c464e07276f7")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5"
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -8775,7 +9580,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 189.738 162.56 90)
 			(hide yes)
 			(show_name no)
@@ -8935,7 +9740,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 157.48 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -9189,16 +9994,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "FAN_FAULT" input
-			(at 205.74 116.84 180)
-			(uuid "a91b93c3-b10b-4303-bd28-ee5e0560b887")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "SHUTDOWN_RESET" output
