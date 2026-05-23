@@ -2205,6 +2205,16 @@
 		)
 		(uuid "52ff0679-8402-4d59-a400-7adac91920ed")
 	)
+	(text "Connected per MCP6004 datasheet Fig 4-5"
+		(exclude_from_sim no)
+		(at 324.866 221.488 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a1971b3f-9096-4c2a-bf25-5d3917ef3d33")
+	)
 	(junction
 		(at 337.82 111.76)
 		(diameter 0)
@@ -2398,6 +2408,12 @@
 		(uuid "99e0d5f1-967f-4f5e-b045-72a04eefdc01")
 	)
 	(junction
+		(at 307.34 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fdda1b3-5220-45a6-a56f-5ee3ce140d07")
+	)
+	(junction
 		(at 95.25 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2506,6 +2522,12 @@
 		(uuid "ec645875-8435-49e5-91a0-001ea6f307be")
 	)
 	(junction
+		(at 288.29 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed45d5db-be7e-403a-9970-aab07eed8d9a")
+	)
+	(junction
 		(at 95.25 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2529,6 +2551,10 @@
 		(color 0 0 0 0)
 		(uuid "fde8578a-541c-4cd3-bcea-9e3f2360caaf")
 	)
+	(no_connect
+		(at 334.01 212.09)
+		(uuid "5e591393-6ad3-4893-9b21-b63dc832a04f")
+	)
 	(wire
 		(pts
 			(xy 44.45 107.95) (xy 55.88 107.95)
@@ -2548,6 +2574,16 @@
 			(type default)
 		)
 		(uuid "00a88ba0-664b-45cc-9189-db68b95e0489")
+	)
+	(wire
+		(pts
+			(xy 288.29 106.68) (xy 288.29 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "010743d0-132b-4c56-8279-022f3feb8f92")
 	)
 	(wire
 		(pts
@@ -2618,6 +2654,16 @@
 			(type default)
 		)
 		(uuid "17534ff9-71ce-4942-a68b-4a19d00dec4d")
+	)
+	(wire
+		(pts
+			(xy 307.34 147.32) (xy 307.34 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1931d6f8-2a1f-4211-bb27-1accd62dc093")
 	)
 	(wire
 		(pts
@@ -2708,6 +2754,16 @@
 			(type default)
 		)
 		(uuid "2b963557-7a4a-42d4-8f3e-0e4fc2061d4c")
+	)
+	(wire
+		(pts
+			(xy 302.26 147.32) (xy 307.34 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e44e309-f847-4334-a73d-931fbf0cadc6")
 	)
 	(wire
 		(pts
@@ -2808,6 +2864,16 @@
 			(type default)
 		)
 		(uuid "3cf767ae-335d-4263-8c74-e269247e8e55")
+	)
+	(wire
+		(pts
+			(xy 314.96 209.55) (xy 318.77 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d011bb7-7bc7-4439-9258-9765398553e2")
 	)
 	(wire
 		(pts
@@ -3111,6 +3177,16 @@
 	)
 	(wire
 		(pts
+			(xy 288.29 78.74) (xy 288.29 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a2024e4-4db3-4e69-93e7-4ee533b7cad9")
+	)
+	(wire
+		(pts
 			(xy 81.28 39.37) (xy 81.28 41.91)
 		)
 		(stroke
@@ -3241,6 +3317,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 214.63) (xy 318.77 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb33bc0-afe3-4401-95bd-ff33aa17f48c")
+	)
+	(wire
+		(pts
 			(xy 55.88 196.85) (xy 44.45 196.85)
 		)
 		(stroke
@@ -3321,6 +3407,16 @@
 	)
 	(wire
 		(pts
+			(xy 283.21 80.01) (xy 288.29 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8187fad3-9c21-4e16-b740-ffe9a9fe5f08")
+	)
+	(wire
+		(pts
 			(xy 81.28 215.9) (xy 95.25 215.9)
 		)
 		(stroke
@@ -3388,6 +3484,16 @@
 			(type default)
 		)
 		(uuid "887eba20-2b31-4c31-b0df-ec9725ef1ecd")
+	)
+	(wire
+		(pts
+			(xy 288.29 80.01) (xy 288.29 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a1e2d63-201d-46a3-831a-94ee26f8fa0e")
 	)
 	(wire
 		(pts
@@ -3508,6 +3614,16 @@
 			(type default)
 		)
 		(uuid "a0488625-f94e-458a-b659-47d2beb743eb")
+	)
+	(wire
+		(pts
+			(xy 307.34 146.05) (xy 307.34 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a20657b8-df02-416b-b64d-9ed02e057ccf")
 	)
 	(wire
 		(pts
@@ -4111,6 +4227,16 @@
 	)
 	(wire
 		(pts
+			(xy 307.34 172.72) (xy 307.34 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee7f80a3-8a0f-43ac-8e79-30fe4d318379")
+	)
+	(wire
+		(pts
 			(xy 81.28 162.56) (xy 55.88 162.56)
 		)
 		(stroke
@@ -4517,6 +4643,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 229.87 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01318255-c4c0-4897-9ff2-c5b58f9acfc1")
+		(property "Reference" "#PWR052"
+			(at 229.87 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.87 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.87 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cfbed967-ccd8-4022-9a58-6ee6a1c75f40")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 95.25 161.29 0)
 		(unit 1)
@@ -4573,6 +4777,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 95.25 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 95.25 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -4665,6 +4880,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 95.25 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0ee104c0-a8cc-44f3-8482-ca54b5634d71")
 		)
@@ -4675,6 +4901,99 @@
 			(project "ece129_discharger"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 283.21 83.82 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f76f6b0-6f10-4832-8536-a35fb0da60de")
+		(property "Reference" "C36"
+			(at 277.876 80.264 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 277.114 81.788 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 282.2448 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 283.21 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 283.21 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 283.21 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e4576379-98ec-416a-94c6-2e196f03761f")
+		)
+		(pin "2"
+			(uuid "0e1f9a9a-544d-41f0-9402-b3383b33ec01")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -4900,6 +5219,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 270.51 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "31ca50e4-6b00-4d5f-ad58-eb8c3435133e")
 		)
@@ -4927,7 +5257,7 @@
 		(dnp no)
 		(uuid "1902b8f5-f0d2-47b5-affc-a3729c1e99bb")
 		(property "Reference" "U3"
-			(at 311.404 155.448 0)
+			(at 311.658 154.178 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4937,7 +5267,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 311.404 157.988 0)
+			(at 309.626 157.734 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4970,6 +5300,17 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 309.88 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
 			(at 309.88 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -5097,6 +5438,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 81.28 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d077e1c1-23c0-411c-aedc-1aa826b6d286")
 		)
@@ -5168,6 +5520,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 81.28 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 81.28 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -5259,6 +5622,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 331.47 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bb151d5b-069f-4ba9-9034-bc35039f56a9")
 		)
@@ -5340,6 +5714,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 312.42 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0a2d7129-d31c-4e97-8447-fa2768e4c99c")
 		)
@@ -5410,6 +5795,17 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 330.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
 			(at 330.2 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -5537,6 +5933,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 339.09 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "65209e95-9f02-4d18-a59b-97cce48ed8b4")
 		)
@@ -5554,7 +5961,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 331.47 151.13 0)
+		(at 309.88 162.56 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5562,10 +5969,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "31f5eedc-5d98-4be5-8890-fb3a1a919861")
 		(property "Reference" "U3"
-			(at 330.2 149.8599 0)
+			(at 309.626 155.956 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5576,7 +5982,8 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 330.2 152.3999 0)
+			(at 308.61 163.8299 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5587,7 +5994,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 330.2 148.59 0)
+			(at 308.61 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5598,7 +6005,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 332.74 146.05 0)
+			(at 311.15 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5609,7 +6016,18 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 331.47 151.13 0)
+			(at 309.88 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
+			(at 309.88 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5813,6 +6231,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 81.28 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b9956012-c39b-485e-91ab-12ef702754db")
 		)
@@ -5830,7 +6259,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 328.93 143.51 0)
+		(at 307.34 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5840,7 +6269,7 @@
 		(dnp no)
 		(uuid "35f5ac8d-b409-4eb1-9bc9-4c81d3db9cef")
 		(property "Reference" "#PWR015"
-			(at 328.93 147.32 0)
+			(at 307.34 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5851,7 +6280,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 328.93 139.446 0)
+			(at 307.34 141.986 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5861,7 +6290,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 328.93 143.51 0)
+			(at 307.34 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5872,7 +6301,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 328.93 143.51 0)
+			(at 307.34 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5883,7 +6312,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 328.93 143.51 0)
+			(at 307.34 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5900,6 +6329,99 @@
 			(project "ece129_discharger"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 302.26 151.13 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "376dac33-d0a0-4272-a48c-2cdf3721192c")
+		(property "Reference" "C35"
+			(at 296.926 147.574 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 296.164 149.098 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 301.2948 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 302.26 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 302.26 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 302.26 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7928bf0b-175a-47b9-926f-8e6165b5a1aa")
+		)
+		(pin "2"
+			(uuid "268eaf0d-f090-4dc4-890a-5737b2494b56")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -6061,7 +6583,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 309.88 76.2 0)
+		(at 288.29 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6071,7 +6593,7 @@
 		(dnp no)
 		(uuid "3b608523-d041-46d7-8f7e-7b16759e4ddc")
 		(property "Reference" "#PWR027"
-			(at 309.88 80.01 0)
+			(at 288.29 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6082,7 +6604,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 309.88 72.136 0)
+			(at 288.29 74.676 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6092,7 +6614,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 309.88 76.2 0)
+			(at 288.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6103,7 +6625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 309.88 76.2 0)
+			(at 288.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6114,7 +6636,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 309.88 76.2 0)
+			(at 288.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6215,7 +6737,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6004")
-		(at 312.42 83.82 0)
+		(at 290.83 95.25 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6223,10 +6745,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3be3955d-2a26-4237-bec1-175171ba2686")
 		(property "Reference" "U4"
-			(at 311.15 82.5499 0)
+			(at 289.306 89.154 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6237,7 +6758,8 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 311.15 85.0899 0)
+			(at 289.56 96.5199 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6248,7 +6770,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 311.15 81.28 0)
+			(at 289.56 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6259,7 +6781,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 313.69 78.74 0)
+			(at 292.1 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6270,7 +6792,18 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
-			(at 312.42 83.82 0)
+			(at 290.83 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
+			(at 290.83 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6332,6 +6865,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 302.26 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3c886c9b-af46-4df9-a354-734cdb095d43")
+		(property "Reference" "#PWR096"
+			(at 302.26 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 298.4097 156.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 302.26 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 302.26 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 302.26 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2bca7b7f-2ab4-4c32-8b87-c06ffca80f28")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
+					(reference "#PWR096")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 95.25 248.92 0)
 		(unit 1)
@@ -6388,6 +6998,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 95.25 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 95.25 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -6912,6 +7533,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "package/gullwing"
+			(at 308.61 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "14"
 			(uuid "66f24005-5f04-4888-9923-487b16a621b0")
 		)
@@ -7359,6 +7991,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "package/gullwing"
+			(at 215.9 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "15"
 			(uuid "275a5314-13e9-4870-bfa8-31ae42cbf9b6")
 		)
@@ -7482,6 +8125,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 320.04 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d2bc95a6-9b17-4f14-9c12-f89731f7e4cb")
 		)
@@ -7563,6 +8217,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 81.28 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "718becb1-c3b5-4781-a175-307fa2416be4")
 		)
@@ -7573,6 +8238,83 @@
 			(project "ece129_discharger"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 314.96 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6fc6ddb7-e20c-4e79-91ec-793071460977")
+		(property "Reference" "#PWR053"
+			(at 314.96 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 314.96 205.486 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 314.96 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf941cd3-4437-4889-b217-a85cfa76bd87")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -8204,6 +8946,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8db0bccd-2c0a-40f8-a215-67924d43f8bd")
 		)
@@ -8214,6 +8967,83 @@
 			(project "ece129_discharger"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 314.96 214.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "856101ca-56ad-4e41-b4a8-5a69dc046711")
+		(property "Reference" "#PWR064"
+			(at 314.96 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 314.96 218.694 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 314.96 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b1fa044-5677-4fed-8d50-ac8dcbf1d851")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -8276,6 +9106,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 95.25 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 95.25 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -8444,6 +9285,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 331.47 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "01b1dc9b-2cfe-4a94-9834-78bc2bd7df3f")
 		)
@@ -8461,7 +9313,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 328.93 158.75 0)
+		(at 307.34 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8471,7 +9323,7 @@
 		(dnp no)
 		(uuid "8e6ab8da-363f-43b1-8a7a-26aabe1ef756")
 		(property "Reference" "#PWR014"
-			(at 328.93 165.1 0)
+			(at 307.34 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8482,7 +9334,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 328.93 162.814 0)
+			(at 307.34 176.784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8492,7 +9344,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 328.93 158.75 0)
+			(at 307.34 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8503,7 +9355,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 328.93 158.75 0)
+			(at 307.34 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8514,7 +9366,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 328.93 158.75 0)
+			(at 307.34 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8602,6 +9454,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 81.28 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "850704e0-2b4d-4b50-a37c-494164a18ec5")
 		)
@@ -8612,6 +9475,83 @@
 			(project "ece129_discharger"
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 283.21 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a63ca4c4-0302-44f2-b02e-c1dc32948f5c")
+		(property "Reference" "#PWR097"
+			(at 283.21 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 280.67 87.884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 283.21 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 283.21 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 283.21 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ea62f67-ee25-493b-b1a5-163f9c087b6b")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -8696,7 +9636,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 309.88 91.44 0)
+		(at 288.29 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8706,7 +9646,7 @@
 		(dnp no)
 		(uuid "aa3abe04-e1a3-4549-9070-9a251b4c9f28")
 		(property "Reference" "#PWR028"
-			(at 309.88 97.79 0)
+			(at 288.29 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8717,7 +9657,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 309.88 95.504 0)
+			(at 288.29 110.744 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8727,7 +9667,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 309.88 91.44 0)
+			(at 288.29 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8738,7 +9678,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 309.88 91.44 0)
+			(at 288.29 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8749,7 +9689,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 309.88 91.44 0)
+			(at 288.29 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8827,6 +9767,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 81.28 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 81.28 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8996,6 +9947,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 95.25 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b87b7b2c-a571-4756-905a-5743dfb472e0")
 		)
@@ -9067,6 +10029,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 345.44 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 345.44 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -9159,6 +10132,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "potentiometer/THT"
+			(at 270.51 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d9ecf1b6-d879-472f-9653-d7255eee204d")
 		)
@@ -9241,6 +10225,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 95.25 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ab5b68b7-aea3-44c0-84f0-1a7820713b7f")
 		)
@@ -9312,6 +10307,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 289.56 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 289.56 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -9426,7 +10432,7 @@
 		(dnp no)
 		(uuid "bef49216-b23a-48ab-8cc0-31fd5168b944")
 		(property "Reference" "U4"
-			(at 292.354 88.138 0)
+			(at 291.084 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9436,7 +10442,7 @@
 			)
 		)
 		(property "Value" "MCP6004"
-			(at 292.354 90.678 0)
+			(at 289.306 90.932 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9469,6 +10475,17 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 290.83 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
 			(at 290.83 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9595,6 +10612,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "package/gullwing"
+			(at 349.25 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "14"
 			(uuid "66f24005-5f04-4888-9923-487b16a621b3")
 		)
@@ -9642,6 +10670,133 @@
 				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
 					(reference "U3")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6004")
+		(at 326.39 212.09 0)
+		(unit 4)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1cf24d2-33df-4218-9dd8-345f95390a6d")
+		(property "Reference" "U3"
+			(at 326.39 201.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6004"
+			(at 326.39 204.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 325.12 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 327.66 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 326.39 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
+			(at 326.39 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "14"
+			(uuid "66f24005-5f04-4888-9923-487b16a621b3")
+		)
+		(pin "2"
+			(uuid "0adde98c-dd3c-4c94-81db-37a3d08f28c5")
+		)
+		(pin "13"
+			(uuid "1e25f77e-9b87-452d-bb49-59daf54d2199")
+		)
+		(pin "8"
+			(uuid "96bdcc60-c114-469c-803c-4f2990540aa2")
+		)
+		(pin "10"
+			(uuid "34687081-6f73-4348-9d84-0980251a133b")
+		)
+		(pin "3"
+			(uuid "28cea2a1-762a-4249-805c-56d7348449d0")
+		)
+		(pin "7"
+			(uuid "fa76614a-0e55-47b0-a3f5-5210052a56e5")
+		)
+		(pin "9"
+			(uuid "cdaa588b-2121-4919-943e-5e182cabc00c")
+		)
+		(pin "1"
+			(uuid "10876641-9872-4e92-943f-51dc329b32c2")
+		)
+		(pin "6"
+			(uuid "65c04370-e15b-41e3-babb-9f2422c0e5e8")
+		)
+		(pin "5"
+			(uuid "bd330d1d-e8aa-4d53-9552-e2aa58b8beba")
+		)
+		(pin "12"
+			(uuid "7e351cb0-9772-4a71-864f-545125653664")
+		)
+		(pin "4"
+			(uuid "04430787-b63a-4546-9ce2-8627e15157a9")
+		)
+		(pin "11"
+			(uuid "9ee8fbb1-5837-4f27-a21a-a0843ef15396")
+		)
+		(instances
+			(project "ece129_discharger"
+				(path "/553a23ec-442a-4f98-939d-2d5634a662f5/7756f6ce-96a2-41f3-8f50-742d0a0e9d47"
+					(reference "U3")
+					(unit 4)
 				)
 			)
 		)
@@ -9703,6 +10858,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 95.25 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 95.25 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -9794,6 +10960,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 81.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9846d319-1ae1-45f9-bb50-d3f3d0631b2a")
 		)
@@ -9875,6 +11052,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 331.47 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b3e26d82-b26e-41b3-ab94-e61614d934e5")
 		)
@@ -9946,6 +11134,17 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 312.42 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 312.42 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10163,6 +11362,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 364.49 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3e683aca-860b-4342-a595-8f80eed6257d")
 		)
@@ -10312,6 +11522,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 95.25 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 95.25 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -10520,6 +11741,17 @@
 			)
 		)
 		(property "Description" "Variable resistor"
+			(at 289.56 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "potentiometer/THT"
 			(at 289.56 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -10814,6 +12046,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 350.52 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9696b7d8-bded-4c26-9168-d77989b64e9d")
 		)
@@ -10884,6 +12127,17 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-14/SOIC-14/TSSOP-14"
+			(at 289.56 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
 			(at 289.56 120.65 0)
 			(hide yes)
 			(show_name no)
