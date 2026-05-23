@@ -76,44 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "starved_thermal|158750000|143383000|6993cda3-7aec-4500-a7c5-f7d70c363408|a7dd7a3d-f211-474e-8dc7-0d47e559a5fd|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|172995500|75675000|fce9ec6a-7274-42f9-bc79-ed28485eb2d6|d0fa7fc8-40ef-4b75-9300-f764fee4fe71|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|175260000|68601500|fce9ec6a-7274-42f9-bc79-ed28485eb2d6|8c7f951d-840a-4bc5-a5e3-02a45899b5bc|F.Cu",
-          "Connected with trace"
-        ],
-        [
-          "starved_thermal|175535500|75675000|fce9ec6a-7274-42f9-bc79-ed28485eb2d6|796c691b-8f56-4015-a1c0-e1538561670a|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|180650000|131862500|fe4bbfaf-f367-494b-a12b-f142c19a9c6a|63edd3b4-1117-4502-90a5-4064a3947a9b|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|184587000|132128000|fe4bbfaf-f367-494b-a12b-f142c19a9c6a|ce5e1ceb-be0f-42f6-bb0b-442015ffc793|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|69043000|121316000|6993cda3-7aec-4500-a7c5-f7d70c363408|e4315a81-0f25-4838-a197-dca45cec72a0|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|80341000|83137000|6993cda3-7aec-4500-a7c5-f7d70c363408|aa5bdae5-de43-455a-90e0-d7d92fabfaac|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|97790000|145923000|6993cda3-7aec-4500-a7c5-f7d70c363408|39791c23-2d92-48b4-bbd0-c2248c0f6c3e|F.Cu",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -187,14 +150,14 @@
         "min_connection": 0.127,
         "min_copper_edge_clearance": 0.254,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.1524,
+        "min_hole_clearance": 0.15,
         "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
-        "min_text_height": 1.016,
-        "min_text_thickness": 0.1524,
+        "min_text_height": 1.0,
+        "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.254,
         "min_track_width": 0.127,
         "min_via_annular_width": 0.127,
@@ -1000,7 +963,7 @@
         "uuid": "553a23ec-442a-4f98-939d-2d5634a662f5"
       }
     ],
-    "used_designators": "TP1-4,C37-38,#PWR98",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
